@@ -791,8 +791,6 @@ h6 {
 }.footer{
 	border-top-width: 1px;
 	border-color: var(--blue-light-1);
-	padding-top: 100px;
-	padding-bottom: 30px;
 }.hero{
 	position: relative;
 }.hero__img{
