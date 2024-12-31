@@ -1,24 +1,87 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");.mx-auto{
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");.col-span-1{
+	grid-column: span 1 / span 1;
+}.col-span-2{
+	grid-column: span 2 / span 2;
+}.mx-auto{
 	margin-left: auto;
 	margin-right: auto;
+}.mt-10{
+	margin-top: 2.5rem;
+}.mt-16{
+	margin-top: 4rem;
+}.mt-2{
+	margin-top: 0.5rem;
+}.mt-5{
+	margin-top: 1.25rem;
 }.mt-6{
 	margin-top: 1.5rem;
+}.mt-8{
+	margin-top: 2rem;
 }.mt-9{
 	margin-top: 2.25rem;
+}.mt-\[100px\]{
+	margin-top: 100px;
 }.flex{
 	display: flex;
+}.grid{
+	display: grid;
 }.w-8{
 	width: 2rem;
+}.w-full{
+	width: 100%;
+}.grid-cols-2{
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+}.grid-cols-3{
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+}.grid-cols-4{
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+}.flex-col{
+	flex-direction: column;
 }.items-center{
 	align-items: center;
+}.justify-end{
+	justify-content: flex-end;
+}.justify-center{
+	justify-content: center;
 }.justify-between{
 	justify-content: space-between;
+}.gap-10{
+	gap: 2.5rem;
+}.gap-20{
+	gap: 5rem;
 }.gap-7{
 	gap: 1.75rem;
+}.gap-8{
+	gap: 2rem;
+}.gap-x-5{
+	-moz-column-gap: 1.25rem;
+	     column-gap: 1.25rem;
+}.gap-y-16{
+	row-gap: 4rem;
+}.border-none{
+	border-style: none;
+}.pb-\[30px\]{
+	padding-bottom: 30px;
+}.pt-\[100px\]{
+	padding-top: 100px;
+}.text-center{
+	text-align: center;
+}.text-\[120px\]{
+	font-size: 120px;
+}.text-\[130px\]{
+	font-size: 130px;
+}.text-lg{
+	font-size: 1.125rem;
+	line-height: 1.75rem;
+}.text-xl{
+	font-size: 1.25rem;
+	line-height: 1.75rem;
 }.font-bold{
 	font-weight: 700;
 }.font-medium{
 	font-weight: 500;
+}.text-primary{
+	color: var(--primary);
 }@layer tailwind {
 	*, ::before, ::after{
 		--tw-border-spacing-x: 0;
@@ -529,6 +592,7 @@ video {
 		--green: #afffa7;
 		--yellow: #ffea87;
 		--cyan: #bef1ff;
+		--grey: #8d8d8d;
 		--aqua-1: #8cffea;
 		--aqua-2: #ecfbf1;
 		--light-purple: #f9dcfb;
@@ -608,7 +672,7 @@ video {
 }body,
 p {
 	font-family: "DM Sans", serif;
-	font-size: 18px;
+	font-size: 16px;
 	line-height: 26px;
 	color: var(--secondary);
 }h1,
@@ -672,12 +736,63 @@ h6 {
 	line-height: 1.25rem;
 }.dml-btn__primary{
 	border-radius: 5px;
+	border-width: 1px;
+	border-color: var(--primary);
 	background-color: var(--primary);
-	padding-top: 0.75rem;
-	padding-bottom: 0.75rem;
+	padding-top: 0.625rem;
+	padding-bottom: 0.625rem;
 	padding-left: 38px;
 	padding-right: 38px;
 	color: var(--white);
+	transition-duration: 300ms;
+}.dml-btn__primary:hover{
+	background-color: transparent;
+	color: var(--primary);
+}.dml-btn__outline{
+	border-radius: 5px;
+	border-width: 1px;
+	border-color: var(--primary);
+	background-color: transparent;
+	padding-top: 0.625rem;
+	padding-bottom: 0.625rem;
+	padding-left: 38px;
+	padding-right: 38px;
+	text-transform: capitalize;
+	color: var(--primary);
+	transition-duration: 300ms;
+}.dml-btn__outline:hover{
+	background-color: var(--primary);
+	color: var(--white);
+}.services__card{
+	position: relative;
+	border-radius: 0.5rem;
+	border-width: 1px;
+	border-color: var(--grey);
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+	padding-top: 2.75rem;
+	padding-bottom: 1.25rem;
+}.services__card__heading{
+	position: absolute;
+	top: -20px;
+	left: 0.75rem;
+	display: inline-block;
+	border-radius: 0.5rem;
+	background-color: var(--green);
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+	padding-top: 0.625rem;
+	padding-bottom: 0.5rem;
+	font-weight: 800;
+	line-height: 1;
+}.serve__desc{
+	font-size: 1.125rem;
+	line-height: 2.5rem;
+}.footer{
+	border-top-width: 1px;
+	border-color: var(--blue-light-1);
+	padding-top: 100px;
+	padding-bottom: 30px;
 }.hero{
 	position: relative;
 }.hero__img{
@@ -686,14 +801,25 @@ h6 {
 	position: absolute;
 	top: 100px;
 	left: 50%;
+	z-index: 10;
 	width: 100%;
 	--tw-translate-x: -50%;
 	transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 	text-align: center;
-}@media (min-width: 1536px){.\32xl\:container{
+}/*===| Hero CSS  End |===*/.services__cards{
+	margin-top: 5rem;
+}/*===| Services CSS  End |===*/@media (min-width: 1536px){.\32xl\:container{
 		width: 100%;
 	}@media (min-width: 1240px){.\32xl\:container{
 			max-width: 1240px;
 		}
+	}
+}@media (min-width: 1024px){.lg\:grid-cols-3{
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}.lg\:py-\[150px\]{
+		padding-top: 150px;
+		padding-bottom: 150px;
+	}.lg\:pt-\[150px\]{
+		padding-top: 150px;
 	}
 }

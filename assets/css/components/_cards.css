@@ -1,0 +1,14 @@
+.services {
+	&__card {
+		@apply relative px-5 pt-11 pb-5 border-[1px] border-grey rounded-lg;
+		&__heading {
+			@apply absolute top-[-20px] left-3 bg-green inline-block pt-2.5 pb-2 px-5 leading-none rounded-lg font-extrabold;
+		}
+	}
+}
+
+.serve {
+	&__desc {
+		@apply text-lg leading-10;
+	}
+}

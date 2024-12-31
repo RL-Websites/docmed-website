@@ -1,9 +1,18 @@
 .hero {
 	@apply relative;
+
 	&__img {
 		@apply w-full;
 	}
 	&__content {
-		@apply absolute top-[100px] left-1/2 translate-x-[-50%] text-center w-full;
+		@apply absolute z-10 top-[100px] left-1/2 translate-x-[-50%] text-center w-full;
 	}
 }
+/*===| Hero CSS  End |===*/
+
+.services {
+	&__cards {
+		@apply mt-20;
+	}
+}
+/*===| Services CSS  End |===*/
