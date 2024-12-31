@@ -1,7 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");.text-2xl{
-	font-size: 1.5rem;
-	line-height: 2rem;
-}.text-5xl{
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");.text-5xl{
 	font-size: 3rem;
 	line-height: 1;
 }.font-bold{
@@ -529,48 +526,77 @@ video {
 	}
 }@font-face {
 	font-family: "CabinetGrotesk";
-	src: url("/assets/fonts/CabinetGrotesk-Thin.otf") format("opentype");
+	src: url("/assets/fonts/CabinetGrotesk-Thin.otf") format("opentype"),
+		url("/assets/fonts/CabinetGroteskThin.eot") format("embedded-opentype"),
+		url("/assets/fonts/CabinetGroteskThin.ttf") format("truetype"),
+		url("/assets/fonts/CabinetGroteskThin.woff") format("woff");
 	font-weight: 100;
 	font-style: normal;
 }@font-face {
 	font-family: "CabinetGrotesk";
-	src: url("/assets/fonts/CabinetGrotesk-Extralight.otf") format("opentype");
+	src: url("/assets/fonts/CabinetGrotesk-Extralight.eot")
+			format("embedded-opentype"),
+		url("/assets/fonts/CabinetGrotesk-Extralight.woff") format("woff"),
+		url("/assets/fonts/CabinetGrotesk-Extralight.ttf") format("truetype"),
+		url("/assets/fonts/CabinetGrotesk-Extralight.otf") format("opentype");
 	font-weight: 200;
 	font-style: normal;
 }@font-face {
 	font-family: "CabinetGrotesk";
-	src: url("/assets/fonts/CabinetGrotesk-Light.otf") format("opentype");
+	src: url("/assets/fonts/CabinetGrotesk-Light.eot") format("embedded-opentype"),
+		url("/assets/fonts/CabinetGrotesk-Light.woff") format("woff"),
+		url("/assets/fonts/CabinetGrotesk-Light.ttf") format("truetype"),
+		url("/assets/fonts/CabinetGrotesk-Light.otf") format("opentype");
 	font-weight: 300;
 	font-style: normal;
 }@font-face {
 	font-family: "CabinetGrotesk";
-	src: url("/assets/fonts/CabinetGrotesk-Regular.otf") format("opentype");
+	src: url("/assets/fonts/CabinetGrotesk-Regular.eot")
+			format("embedded-opentype"),
+		url("/assets/fonts/CabinetGrotesk-Regular.woff") format("woff"),
+		url("/assets/fonts/CabinetGrotesk-Regular.ttf") format("truetype"),
+		url("/assets/fonts/CabinetGrotesk-Regular.otf") format("opentype");
 	font-weight: normal;
 	font-style: normal;
 }@font-face {
 	font-family: "CabinetGrotesk";
-	src: url("/assets/fonts/CabinetGrotesk-Medium.otf") format("opentype");
+	src: url("/assets/fonts/CabinetGrotesk-Medium.eot")
+			format("embedded-opentype"),
+		url("/assets/fonts/CabinetGrotesk-Medium.woff") format("woff"),
+		url("/assets/fonts/CabinetGrotesk-Medium.ttf") format("truetype"),
+		url("/assets/fonts/CabinetGrotesk-Medium.otf") format("opentype");
 	font-weight: 500;
 	font-style: normal;
 }@font-face {
 	font-family: "CabinetGrotesk";
-	src: url("/assets/fonts/CabinetGrotesk-Bold.otf") format("opentype");
+	src: url("/assets/fonts/CabinetGrotesk-Bold.eot") format("embedded-opentype"),
+		url("/assets/fonts/CabinetGrotesk-Bold.woff") format("woff"),
+		url("/assets/fonts/CabinetGrotesk-Bold.ttf") format("truetype"),
+		url("/assets/fonts/CabinetGrotesk-Bold.otf") format("opentype");
 	font-weight: bold;
 	font-style: normal;
 }@font-face {
 	font-family: "CabinetGrotesk";
-	src: url("/assets/fonts/CabinetGrotesk-Extrabold.otf") format("opentype");
+	src: url("/assets/fonts/CabinetGrotesk-Extrabold.eot")
+			format("embedded-opentype"),
+		url("/assets/fonts/CabinetGrotesk-Extrabold.woff") format("woff"),
+		url("/assets/fonts/CabinetGrotesk-Extrabold.ttf") format("truetype"),
+		url("/assets/fonts/CabinetGrotesk-Extrabold.otf") format("opentype");
 	font-weight: 800;
 	font-style: normal;
 }@font-face {
 	font-family: "CabinetGrotesk";
-	src: url("/assets/fonts/CabinetGrotesk-Black.otf") format("opentype");
+	src: url("/assets/fonts/CabinetGrotesk-Black.eot") format("embedded-opentype"),
+		url("/assets/fonts/CabinetGrotesk-Black.woff") format("woff"),
+		url("/assets/fonts/CabinetGrotesk-Black.ttf") format("truetype"),
+		url("/assets/fonts/CabinetGrotesk-Black.otf") format("opentype");
 	font-weight: 900;
 	font-style: normal;
 }body,
 p {
 	font-family: "DM Sans", serif;
-	color: var(--primary);
+	font-size: 18px;
+	color: var(--secondary);
 }h1,
 h2,
 h3,
@@ -584,5 +610,14 @@ h6 {
 }h2 {
 	font-size: 78px;
 	line-height: 1;
+}h3 {
+	font-size: 40px;
+	line-height: 52px;
+}h4 {
+	font-size: 30px;
+	line-height: 45px;
+}h5 {
+	font-size: 20px;
+	line-height: 28px;
 }@media only screen and (max-width: 768px) {
 }

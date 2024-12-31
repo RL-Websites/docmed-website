@@ -1,7 +1,8 @@
 body,
 p {
 	font-family: "DM Sans", serif;
-	color: var(--primary);
+	font-size: 18px;
+	color: var(--secondary);
 }
 h1,
 h2,
@@ -20,6 +21,18 @@ h1 {
 h2 {
 	font-size: 78px;
 	line-height: 1;
+}
+h3 {
+	font-size: 40px;
+	line-height: 52px;
+}
+h4 {
+	font-size: 30px;
+	line-height: 45px;
+}
+h5 {
+	font-size: 20px;
+	line-height: 28px;
 }
 @media only screen and (max-width: 768px) {
 }
