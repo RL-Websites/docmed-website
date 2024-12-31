@@ -1,0 +1,27 @@
+.header {
+	@apply py-[43px] shadow-[0px_4px_25.4px_0px_rgba(219,219,219,0.25)];
+}
+
+.header__menus {
+	ul {
+		@apply border-b-[1px] border-blue-light-1 pb-2;
+		li {
+			a {
+				@apply text-[18px] font-medium relative;
+			}
+
+			a::after {
+				content: "";
+				@apply w-[1px] h-[35px] bg-blue-light-1 absolute right-[-15px];
+			}
+
+			&:last-child a::after {
+				@apply hidden;
+			}
+		}
+	}
+}
+
+.header__menus .active {
+	@apply font-semibold text-primary;
+}

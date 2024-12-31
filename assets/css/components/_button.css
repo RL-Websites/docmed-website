@@ -1,0 +1,6 @@
+.dml-btn {
+	@apply text-xl font-semibold leading-5 text-center;
+	&__primary {
+		@apply bg-primary text-white py-3 px-[38px] rounded-[5px];
+	}
+}

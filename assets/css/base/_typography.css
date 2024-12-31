@@ -2,6 +2,7 @@ body,
 p {
 	font-family: "DM Sans", serif;
 	font-size: 18px;
+	line-height: 26px;
 	color: var(--secondary);
 }
 h1,
