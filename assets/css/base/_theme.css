@@ -1,0 +1,18 @@
+@layer base {
+	:root {
+		--primary: #175bcc;
+		--secondary: #444444;
+		--white: #ffffff;
+		--light: #fff1f1;
+		--green: #afffa7;
+		--yellow: #ffea87;
+		--cyan: #bef1ff;
+		--aqua-1: #8cffea;
+		--aqua-2: #ecfbf1;
+		--light-purple: #f9dcfb;
+		--blue-light-1: #dadef2;
+		--blue-light-2: #f1f5ff;
+		--blue-light-3: #ffedfd;
+		--blue-light-4: #f2f1fe;
+	}
+}

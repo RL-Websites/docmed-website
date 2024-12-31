@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+@font-face {
+	font-family: "CabinetGrotesk";
+	src: url("/assets/fonts/CabinetGrotesk-Thin.otf") format("opentype");
+	font-weight: 100;
+	font-style: normal;
+}
+@font-face {
+	font-family: "CabinetGrotesk";
+	src: url("/assets/fonts/CabinetGrotesk-Extralight.otf") format("opentype");
+	font-weight: 200;
+	font-style: normal;
+}
+@font-face {
+	font-family: "CabinetGrotesk";
+	src: url("/assets/fonts/CabinetGrotesk-Light.otf") format("opentype");
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: "CabinetGrotesk";
+	src: url("/assets/fonts/CabinetGrotesk-Regular.otf") format("opentype");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "CabinetGrotesk";
+	src: url("/assets/fonts/CabinetGrotesk-Medium.otf") format("opentype");
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "CabinetGrotesk";
+	src: url("/assets/fonts/CabinetGrotesk-Bold.otf") format("opentype");
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: "CabinetGrotesk";
+	src: url("/assets/fonts/CabinetGrotesk-Extrabold.otf") format("opentype");
+	font-weight: 800;
+	font-style: normal;
+}
+@font-face {
+	font-family: "CabinetGrotesk";
+	src: url("/assets/fonts/CabinetGrotesk-Black.otf") format("opentype");
+	font-weight: 900;
+	font-style: normal;
+}
