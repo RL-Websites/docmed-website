@@ -7,6 +7,21 @@
 	}
 }
 
+.all-service {
+	&__card {
+		@apply mt-5 flex  items-center  justify-between  rounded-t-none rounded-e-[10px] rounded-b-[10px] rounded-s-[80px] rounded-tl-none;
+	}
+	&__left {
+		@apply py-12 ps-10 w-8/12;
+		&--alt {
+			@apply w-7/12;
+		}
+	}
+	&__right {
+		@apply py-5;
+	}
+}
+
 .serve {
 	&__desc {
 		@apply text-lg leading-10;
