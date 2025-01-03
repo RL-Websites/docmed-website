@@ -4,3 +4,8 @@
 	color: transparent;
 	font-weight: 700;
 }
+
+.bottom-border {
+	border-bottom: 1px solid var(--blue-light-1);
+	@apply pb-4;
+}

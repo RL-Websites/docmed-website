@@ -18,6 +18,10 @@
 	grid-column: span 5 / span 5;
 }.col-span-7{
 	grid-column: span 7 / span 7;
+}.col-span-4{
+	grid-column: span 4 / span 4;
+}.col-span-8{
+	grid-column: span 8 / span 8;
 }.mx-auto{
 	margin-left: auto;
 	margin-right: auto;
@@ -63,6 +67,18 @@
 	width: 2rem;
 }.w-full{
 	width: 100%;
+}.max-w-\[430px\]{
+	max-width: 430px;
+}.max-w-\[400px\]{
+	max-width: 400px;
+}.max-w-\[200px\]{
+	max-width: 200px;
+}.max-w-\[4350px\]{
+	max-width: 4350px;
+}.max-w-\[350px\]{
+	max-width: 350px;
+}.max-w-\[320px\]{
+	max-width: 320px;
 }.rotate-0{
 	--tw-rotate: 0deg;
 	transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -135,8 +151,16 @@
 	padding-inline-end: 1.75rem;
 }.pt-\[100px\]{
 	padding-top: 100px;
+}.pe-0{
+	padding-inline-end: 0px;
+}.pt-5{
+	padding-top: 1.25rem;
+}.ps-0{
+	padding-inline-start: 0px;
 }.text-center{
 	text-align: center;
+}.align-middle{
+	vertical-align: middle;
 }.text-3xl{
 	font-size: 1.875rem;
 	line-height: 2.25rem;
@@ -793,6 +817,9 @@ h6 {
 	-webkit-background-clip: text;
 	color: transparent;
 	font-weight: 700;
+}.bottom-border {
+	border-bottom: 1px solid var(--blue-light-1);
+	padding-bottom: 1rem;
 }.header{
 	padding-top: 43px;
 	padding-bottom: 43px;
@@ -949,11 +976,19 @@ h6 {
 	text-align: center;
 }/*===| Hero CSS  End |===*/.services__cards{
 	margin-top: 5rem;
-}/*===| Services CSS  End |===*/@media (min-width: 1536px){.\32xl\:container{
+}/*===| Services CSS  End |===*/.who-serve {
+}/*===| Who Serve CSS  End |===*/@media (min-width: 1536px){.\32xl\:container{
 		width: 100%;
 	}@media (min-width: 1240px){.\32xl\:container{
 			max-width: 1240px;
 		}
+	}
+}@media (min-width: 768px){.md\:pe-24{
+		padding-inline-end: 6rem;
+	}.md\:ps-10{
+		padding-inline-start: 2.5rem;
+	}.md\:ps-16{
+		padding-inline-start: 4rem;
 	}
 }@media (min-width: 1024px){.lg\:grid-cols-3{
 		grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -964,5 +999,7 @@ h6 {
 		padding-bottom: 150px;
 	}.lg\:pt-\[150px\]{
 		padding-top: 150px;
+	}.lg\:pb-\[120px\]{
+		padding-bottom: 120px;
 	}
 }
