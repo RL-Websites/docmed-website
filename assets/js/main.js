@@ -18,4 +18,16 @@ $(document).ready(function () {
 			$icon.removeClass("rotate-0").addClass("rotate-180");
 		}
 	});
+	// Accordion configuration done
+
+	const header = $("header");
+
+	$(window).on("scroll", function () {
+		if ($(this).scrollTop() > 100) {
+			header.addClass("sticky");
+		} else {
+			header.removeClass("sticky");
+		}
+	});
+	// Header Sticky added
 });
