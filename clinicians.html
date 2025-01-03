@@ -25,11 +25,11 @@
 				</a>
 				<nav class="header__menus">
 					<ul class="flex gap-7">
-						<li><a class="active" href="index.html">Home</a></li>
+						<li><a href="index.html">Home</a></li>
 						<li><a href="/services.html">Services</a></li>
-						<li><a href="/who-we-serve.html">About us</a></li>
-						<li><a href="#">Clinicians</a></li>
-						<li><a href="#">Contact us</a></li>
+						<li><a href="index.html#about-us">About us</a></li>
+						<li><a class="active" href="/clinicians.html">Clinicians</a></li>
+						<li><a href="index.html#contact-us">Contact us</a></li>
 					</ul>
 				</nav>
 				<!-- <a href="">
@@ -292,7 +292,7 @@
 			<!--====|| Community Section End ||====-->
 
 			<!--====|| Contact Section Start ||====-->
-			<section class="contact lg:pt-[180px]">
+			<section class="contact lg:pt-[180px] lg:pb-[150px]">
 				<div class="2xl:container mx-auto grid grid-cols-2">
 					<div class="pe-24">
 						<h2 class="font-bold"
@@ -342,24 +342,30 @@
 									<label class="input__label" for="specialization">
 										Specialization</label
 									>
-									<select class="input__box" id="specialization">
-										<option>Select an option</option>
-										<option>Psychiatry</option>
-										<option>Psychology </option>
-										<option>Therapy</option>
-										<option>Dermatology</option>
-									</select>
+									<div class="input__select">
+										<select class="input__box" id="specialization">
+											<option>Select an option</option>
+											<option>Psychiatry</option>
+											<option>Psychology </option>
+											<option>Therapy</option>
+											<option>Dermatology</option>
+										</select>
+										<i class="icon-arrow-down input__select-icon"></i>
+									</div>
 								</div>
 								<div class="input__item">
 									<label class="input__label" for="practiceSize">
 										Practice Size</label
 									>
-									<select class="input__box" id="practiceSize">
-										<option>Select an option</option>
-										<option>Solo Practitioner</option>
-										<option>Small Group </option>
-										<option>Large Clinic </option>
-									</select>
+									<div class="input__select">
+										<select class="input__box" id="practiceSize">
+											<option>Select an option</option>
+											<option>Solo Practitioner</option>
+											<option>Small Group </option>
+											<option>Large Clinic </option>
+										</select>
+										<i class="icon-arrow-down input__select-icon"></i>
+									</div>
 								</div>
 								<div class="input__item">
 									<label class="input__label" for="telehealth">
@@ -382,15 +388,18 @@
 									<label class="input__label" for="aboutUs">
 										How did you hear about us?</label
 									>
-									<select class="input__box" id="aboutUs">
-										<option>Select an option</option>
-										<option>Facebook Ad/Post</option>
-										<option>Instagram Ad/Post</option>
-										<option>Google Search</option>
-										<option>Newspaper Ad</option>
-										<option>Television Ad</option>
-										<option>Word of Mouth (Through a Friend)</option>
-									</select>
+									<div class="input__select">
+										<select class="input__box" id="aboutUs">
+											<option>Select an option</option>
+											<option>Facebook Ad/Post</option>
+											<option>Instagram Ad/Post</option>
+											<option>Google Search</option>
+											<option>Newspaper Ad</option>
+											<option>Television Ad</option>
+											<option>Word of Mouth (Through a Friend)</option>
+										</select>
+										<i class="icon-arrow-down input__select-icon"></i>
+									</div>
 								</div>
 
 								<div class="flex items-center justify-between">
@@ -408,39 +417,49 @@
 		<!--====||  Main Section End ||====-->
 
 		<!--====||  Footer Section Start ||====-->
-		<footer class="footer pt-[100px] pb-[30px]">
-			<div class="2xl:container mx-auto grid grid-cols-3">
-				<div class="col-span-1">
-					<img src="assets/img/logo.svg" alt="DML Logo" />
-					<p class="text-xl mt-5">&copy; 2025 Docmedilink. Inc.</p>
-					<div class="flex items-center gap-10 mt-16">
-						<img src="assets/img/hippa .svg" alt="Hippa Logo" />
-						<img src="assets/img/surescripts.svg" alt="Surescript Logo" />
+		<footer class="footer pb-20">
+			<img
+				class="footer__img mx-auto"
+				src="assets/img/footer.png"
+				alt="Hero Image"
+			/>
+			<div class="2xl:container mx-auto">
+				<div class="footer__content grid grid-cols-3">
+					<div class="col-span-1">
+						<img src="assets/img/logo.svg" alt="DML Logo" />
+						<p class="text-xl mt-5">&copy; 2025 Docmedilink. Inc.</p>
+						<div class="flex items-center gap-10 mt-16">
+							<img src="assets/img/hippa .svg" alt="Hippa Logo" />
+							<img src="assets/img/surescripts.svg" alt="Surescript Logo" />
+						</div>
 					</div>
-				</div>
-				<div class="col-span-2 grid grid-cols-3">
-					<div>
-						<h4 class="font-bold">Quick Links</h4>
-						<ul class="flex flex-col gap-8 mt-5">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="#">Services</a></li>
-							<li><a href="#">About Us</a></li>
-							<li><a href="#">Contact Us</a></li>
-						</ul>
-					</div>
-					<div>
-						<h4 class="font-bold">Social Links</h4>
-						<ul class="flex flex-col gap-8 mt-5">
-							<li><a href="#">Linkedin</a></li>
-							<li><a href="#">Facebook</a></li>
-						</ul>
-					</div>
-					<div>
-						<h4 class="font-bold">Contacts</h4>
-						<ul class="flex flex-col gap-8 mt-5">
-							<li><a href="#">docmedilink@email.com</a></li>
-							<li><a href="#">(555) 555 - 1234</a></li>
-						</ul>
+					<div class="col-span-2 grid grid-cols-3">
+						<div>
+							<h4 class="font-bold">Quick Links</h4>
+							<ul class="flex flex-col gap-8 mt-5 footer__menus">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="/services.html">Services</a></li>
+								<li><a href="index.html#about-us">About Us</a></li>
+								<li
+									><a class="active" href="/clinicians.html">Clinicians</a></li
+								>
+								<li><a href="index.html#contact-us">Contact Us</a></li>
+							</ul>
+						</div>
+						<div>
+							<h4 class="font-bold">Social Links</h4>
+							<ul class="flex flex-col gap-8 mt-5">
+								<li><a href="#">Linkedin</a></li>
+								<li><a href="#">Facebook</a></li>
+							</ul>
+						</div>
+						<div>
+							<h4 class="font-bold">Contacts</h4>
+							<ul class="flex flex-col gap-8 mt-5">
+								<li><a href="#">docmedilink@email.com</a></li>
+								<li><a href="#">(555) 555 - 1234</a></li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>

@@ -1,3 +1,11 @@
 .footer {
-	@apply border-t border-blue-light-1;
+	@apply border-t border-blue-light-1 relative;
+	&__content {
+		@apply absolute z-10 top-[100px] left-1/2 translate-x-[-50%]  w-full max-w-[1240px];
+	}
+	&__menus {
+		.active {
+			@apply font-semibold text-primary;
+		}
+	}
 }
