@@ -2,7 +2,7 @@
 	&__card {
 		@apply relative px-5 pt-11 pb-5 border-[1px] border-grey-1 rounded-lg;
 		&__heading {
-			@apply absolute top-[-20px] left-3 bg-green inline-block pt-2.5 pb-2 px-5 leading-none rounded-lg font-extrabold;
+			@apply absolute top-[-20px] left-3  inline-block pt-2.5 pb-2 px-5 leading-none rounded-lg font-extrabold;
 		}
 	}
 }
@@ -25,5 +25,41 @@
 .serve {
 	&__desc {
 		@apply text-lg leading-10;
+	}
+}
+
+.work {
+	&__cards {
+		padding-top: 1px;
+		padding-bottom: 70px;
+		height: 100%;
+		background-image: url("../../../assets/img/curve-frame.png");
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+	}
+
+	&__card {
+		@apply relative rotate-[6deg] -ms-7;
+		&--alt {
+			@apply rotate-[-5.7deg] -mt-4;
+		}
+	}
+
+	&__content {
+		@apply absolute top-2 px-8 pt-10 flex flex-col items-center text-center h-full w-full;
+	}
+	&__heading {
+		@apply max-w-[250px] font-bold uppercase;
+	}
+	&__number {
+		@apply inline-flex items-center justify-center text-[40px] font-bold  w-[66px] h-[66px] rounded-full rotate-[26deg] absolute -top-6 start-16;
+		&--alt {
+			top: unset;
+			@apply -rotate-[26deg] bottom-0;
+		}
+	}
+	&__img {
+		@apply w-[130px] text-center;
 	}
 }

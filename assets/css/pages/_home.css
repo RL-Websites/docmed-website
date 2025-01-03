@@ -6,6 +6,9 @@
 	}
 	&__content {
 		@apply absolute z-10 top-[100px] left-1/2 translate-x-[-50%] text-center w-full;
+		&--alt {
+			@apply max-w-[1240px] text-start top-[35%];
+		}
 	}
 }
 /*===| Hero CSS  End |===*/
