@@ -30,4 +30,13 @@ $(document).ready(function () {
 		}
 	});
 	// Header Sticky added
+
+	var currentPath = window.location.pathname;
+
+	$(".header__menus a").each(function () {
+		if ($(this).attr("href") === currentPath) {
+			$(".header__menus a").removeClass("active");
+			$(this).addClass("active");
+		}
+	});
 });
