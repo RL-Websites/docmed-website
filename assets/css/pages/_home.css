@@ -20,7 +20,15 @@
 }
 /*===| Services CSS  End |===*/
 
-.who-serve {
-}
-
 /*===| Who Serve CSS  End |===*/
+
+@media only screen and (max-width: 768px) {
+	.hero {
+		&__img {
+			@apply hidden;
+		}
+		&__content {
+			@apply relative pt-[50px] pb-[80px];
+		}
+	}
+}

@@ -1,5 +1,5 @@
 .header {
-	@apply py-[43px] shadow-[0px_4px_25.4px_0px_rgba(219,219,219,0.25)];
+	@apply py-[43px] md:px-0 px-4 shadow-[0px_4px_25.4px_0px_rgba(219,219,219,0.25)];
 
 	position: fixed;
 	top: 0;
@@ -35,4 +35,38 @@
 
 .header__menus .active {
 	@apply font-semibold text-primary;
+}
+
+@media only screen and (max-width: 992px) {
+	.header {
+		@apply py-5 px-5;
+		&.sticky {
+			@apply py-5 px-5;
+		}
+		&__menus {
+			ul {
+				@apply hidden;
+			}
+			&.show-menu {
+				ul {
+					z-index: 1000;
+					@apply flex flex-col fixed  bg-white w-full top-20 py-10 px-20 left-0 h-screen;
+					li {
+						a {
+							display: block;
+							&::after {
+								position: absolute;
+								right: unset;
+								left: 0;
+								bottom: -16px;
+								height: 1px;
+								width: 100%;
+								background-color: var(--blue-light-1);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }

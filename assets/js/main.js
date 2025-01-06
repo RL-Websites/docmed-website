@@ -40,4 +40,19 @@ $(document).ready(function () {
 		}
 	});
 	// Header Menu Active Class added
+
+	$(".toggle-menu").click(function () {
+		$(".header__menus").toggleClass("show-menu");
+		const hamburgerIcon = $(this).find(".hamburger-icon");
+		const closeIcon = $(this).find(".close-icon");
+
+		if (hamburgerIcon.is(":visible")) {
+			hamburgerIcon.hide();
+			closeIcon.show();
+		} else {
+			hamburgerIcon.show();
+			closeIcon.hide();
+		}
+	});
+	// Toggle menu Integration
 });
