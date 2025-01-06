@@ -179,8 +179,6 @@
 	margin-top: 1.75rem;
 }.mt-8{
 	margin-top: 2rem;
-}.mt-9{
-	margin-top: 2.25rem;
 }.mt-\[100px\]{
 	margin-top: 100px;
 }.block{
@@ -1161,6 +1159,7 @@ h6 {
 	font-weight: 600;
 	color: var(--primary);
 }.dml-btn{
+	display: inline-block;
 	text-align: center;
 	font-size: 1.25rem;
 	font-weight: 600;
@@ -1373,8 +1372,6 @@ h6 {
 	}
 }@media (min-width: 768px){.md\:mt-6{
 		margin-top: 1.5rem;
-	}.md\:hidden{
-		display: none;
 	}.md\:pe-24{
 		padding-inline-end: 6rem;
 	}.md\:ps-16{
