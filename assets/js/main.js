@@ -39,4 +39,5 @@ $(document).ready(function () {
 			$(this).addClass("active");
 		}
 	});
+	// Header Menu Active Class added
 });
