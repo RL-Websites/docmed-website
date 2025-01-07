@@ -9,3 +9,12 @@
 		}
 	}
 }
+
+@media only screen and (max-width: 992px) {
+	.footer {
+		@apply py-[50px] px-5;
+		&__content {
+			@apply relative top-[unset];
+		}
+	}
+}
