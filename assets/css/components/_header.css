@@ -26,7 +26,8 @@
 				@apply w-[1px] h-[35px] bg-blue-light-1 absolute right-[-15px];
 			}
 
-			&:last-child a::after {
+			&:last-child a::after,
+			&:nth-last-child(2) a::after {
 				@apply hidden;
 			}
 		}
