@@ -36,8 +36,13 @@
 .header__menus .active {
 	@apply font-semibold text-primary;
 }
-
+.toggle-menu {
+	display: none;
+}
 @media only screen and (max-width: 992px) {
+	.toggle-menu {
+		display: block;
+	}
 	.header {
 		@apply py-5 px-5;
 		&.sticky {
@@ -50,7 +55,7 @@
 			&.show-menu {
 				ul {
 					z-index: 1000;
-					@apply flex flex-col fixed  bg-white w-full top-20 py-10 px-20 left-0 h-screen;
+					@apply flex flex-col fixed  bg-white w-full top-20 py-10 px-5 left-0 h-screen;
 					li {
 						a {
 							display: block;

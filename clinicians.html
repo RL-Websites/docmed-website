@@ -30,9 +30,18 @@
 						<li><a href="/clinicians.html">Clinicians</a></li>
 						<li><a href="/index.html#about-us">About us</a></li>
 						<li><a href="/index.html#contact-us">Contact us</a></li>
+						<li class="sm-block w-[100px]">	<a href="who-we-serve.html" class="dml-btn dml-btn__primary"
+							>Login</a
+						></li>
 					</ul>
 				</nav>
-				<button class="toggle-menu lg:hidden block">
+
+				<div class="sm-hidden">
+					<a href="who-we-serve.html" class=" dml-btn dml-btn__primary">Login</a>
+				</div>
+
+
+				<button class="toggle-menu">
 					<img
 						class="hamburger-icon"
 						src="assets/img/hamburger.svg"
@@ -50,7 +59,7 @@
 		<!--====||  Header Section End ||====-->
 
 		<!--====||  Main Section Start ||====-->
-		<main class="pt-[130px] overflow-x-hidden">
+		<main class="lg:pt-[130px] pt-[50px] overflow-x-hidden">
 			<!--====|| Hero Section Start ||====-->
 			<section class="hero">
 				<img
@@ -62,7 +71,7 @@
 					<h1 class="font-medium"
 						><span class="gradient-heading"> Clinicians</span>
 					</h1>
-					<h4 class="font-bold"
+					<h4 class="font-bold h4-alt"
 						>Empowering healthcare providers to <br />
 						<span class="text-primary"> Expand Their Reach </span>
 					</h4>
@@ -102,11 +111,13 @@
 				</div>
 				<!--Frame Integration End-->
 				<div class="2xl:container mx-auto">
-					<h1 class="font-bold">
+					<h1 class="font-bold md:text-start text-center">
 						<span class="text-primary">Key Features</span> for <br />
 						Clinicians
 					</h1>
-					<div class="services__cards grid lg:grid-cols-3 gap-x-5 gap-y-16">
+					<div
+						class="services__cards grid lg:grid-cols-3 gap-x-5 md:gap-y-16 gap-y-10"
+					>
 						<div class="services__card">
 							<h5 class="services__card__heading bg-green"
 								>Customizable Scheduling Tools</h5
@@ -163,18 +174,18 @@
 			<!--====|| Service Section End ||====-->
 
 			<!--====|| How It Works Section Start ||====-->
-			<section class="work lg:pt-[100px] relative z-10">
+			<section class="work lg:pt-[100px] md:pt-[80px] pt-[50px] relative z-10" relative z-10">
 				<!--Frame Integration Start-->
-				<div>
+				<div >
 					<img
-						class="absolute -z-10 -right-[150px] -top-20 w-[340px] rotate-[130deg]"
+						class="absolute -z-10 lg:-right-[150px] -right-unset lg:left-[unset] -left-[120px] lg:-top-20 top-0 lg:w-[340px] md:w-[200px] rotate-[130deg]"
 						src="assets/img/frame/dice-1.svg"
 						alt="Frame"
 					/>
 				</div>
 				<!--Frame Integration End-->
 				<div class="2xl:container mx-auto">
-					<h1 class="font-bold"
+					<h1 class="font-bold md:text-start text-center"
 						>How it <span class="text-primary">Works</span>
 					</h1>
 				</div>
@@ -199,7 +210,7 @@
 							/>
 						</div>
 						<!--Frame Integration End-->
-						<div class="grid grid-cols-4 mt-20">
+						<div class="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 md:gap-[unset] gap-7  mt-20">
 							<div class="work__card">
 								<img
 									class="work__frame"
@@ -312,13 +323,13 @@
 				</div>
 				<!--Frame Integration End-->
 				<div class="2xl:container mx-auto">
-					<h1 class="font-bold">
+					<h1 class="font-bold md:text-start text-center">
 						<span class="text-primary">Docmedilink</span> is Ideal For 
 					</h1>
-					<div class="serve-cards grid grid-cols-3 gap-20 mt-16">
+					<div class="serve-cards grid md:grid-cols-3 md:text-start text-center lg:gap-20 md:gap-10 gap-5 mt-16">
 						<div class="serve-card">
 							<i class="icon-graph text-[130px]"></i>
-							<h4 class="font-bold mt-2">Clinics Seeking Growth</h4>
+							<h4 class="font-bold mt-2 text-[30px]">Clinics Seeking Growth</h4>
 							<p class="text-lg"
 								>Connect with more patients and expand your presence beyond
 								physical boundaries.
@@ -327,7 +338,7 @@
 						<!-- Serve Card End -->
 						<div class="serve-card">
 							<i class="icon-suitcase-2 text-[130px]"></i>
-							<h4 class="font-bold mt-2">Busy Healthcare Providers</h4>
+							<h4 class="font-bold mt-2 text-[30px]">Busy Healthcare Providers</h4>
 							<p class="text-lg"
 								>Simplify your workflow with tools designed to save time and
 								improve efficiency. 
@@ -336,7 +347,7 @@
 						<!-- Serve Card End -->
 						<div class="serve-card">
 							<i class="icon-user text-[130px]"></i>
-							<h4 class="font-bold mt-2"
+							<h4 class="font-bold mt-2 text-[30px]"
 								>Practices Focused on Patient-Centric Care</h4
 							>
 							<p class="text-lg"
@@ -351,7 +362,7 @@
 			<!--====|| Docmedilink Ideology Section End ||====-->
 
 			<!--====|| Community Section Start ||====-->
-			<section class="community lg:pt-[180px] relative z-10">
+			<section class="community lg:pt-[180px] md:pt-[100px] pt-[80px] relative z-10">
 				<!--Frame Integration Start-->
 				<div>
 					<img
@@ -373,7 +384,7 @@
 				<!--Frame Integration End-->
 				<div class="2xl:container mx-auto">
 					<div
-						class="bg-[#F7F4F4] py-20 px-16 text-center max-w-[930px] mx-auto rounded-[10px] relative -rotate-[5deg]"
+						class="bg-[#F7F4F4] lg:py-20 md:py-10 py-7  lg:px-16 md:px-8 px-5 text-center max-w-[930px] mx-auto rounded-[10px] relative -rotate-[5deg]"
 					>
 						<img
 							class="absolute top-[-40px] left-1/2 -translate-x-1/2"
@@ -384,7 +395,7 @@
 							>Join the
 							<span class="text-primary">Docmedilink</span> Community</h3
 						>
-						<p class="text-lg"
+						<p class="text-lg mt-3"
 							>Take your clinic to the next level with a platform designed to
 							grow with you. Docmedilink ensures you have the tools to deliver
 							outstanding care, manage your operations efficiently, and reach
@@ -396,9 +407,9 @@
 			<!--====|| Community Section End ||====-->
 
 			<!--====|| Contact Section Start ||====-->
-			<section class="contact lg:pt-[180px] lg:pb-[150px] relative z-10">
-				<div class="2xl:container mx-auto grid grid-cols-2">
-					<div class="pe-24 relative">
+			<section class="contact lg:pt-[180px] md:pt-[100px] pt-[80px] lg:pb-[150px] md:pb-[80px] pb-[50px] relative z-10">
+				<div class="2xl:container mx-auto grid md:grid-cols-2 gird-cols-1">
+					<div class="lg:pe-24 pe-0 relative">
 						<!--Frame Integration Start-->
 						<div>
 							<img
@@ -418,16 +429,16 @@
 							/>
 						</div>
 						<!--Frame Integration End-->
-						<h2 class="font-bold"
+						<h2 class="font-bold md:text-start text-center"
 							>Get Started <span class="text-primary block">Today </span></h2
 						>
-						<p class="text-lg mt-7"
+						<p class="text-lg mt-7 md:text-start text-center"
 							>Ready to transform your clinic’s operations and patient care?
 							Join the Docmedilink network and discover the difference our
 							platform can make. </p
 						>
 						<img
-							class="w-2/3 relative -z-10"
+							class="w-2/3 relative -z-10 md:block hidden"
 							src="assets/img/contact-2.png"
 							alt="Contact"
 						/>
@@ -442,9 +453,9 @@
 							/>
 						</div>
 						<!--Frame Integration End-->
-						<div class="input__wrapper lg:p-7 p-4">
+						<div class="input__wrapper lg:p-7 p-4 md:mt-0 mt-5">
 							<form>
-								<div class="flex gap-5">
+								<div class="md:flex  lg:gap-5 gap-3">
 									<div class="input__item">
 										<label class="input__label" for="clinicName">
 											Clinic Name
@@ -459,7 +470,7 @@
 										<input class="input__box" id="contactName" type="text" />
 									</div>
 								</div>
-								<div class="flex gap-5">
+								<div class="md:flex lg:gap-5 gap-3">
 									<div class="input__item">
 										<label class="input__label" for="contactEmail">
 											Email Address
@@ -550,46 +561,62 @@
 		</main>
 		<!--====||  Main Section End ||====-->
 
-		<!--====||  Footer Section Start ||====-->
+			<!--====||  Footer Section Start ||====-->
 		<footer class="footer pb-20">
 			<img
-				class="footer__img mx-auto"
+				class="footer__img mx-auto lg:block hidden"
 				src="assets/img/footer.png"
 				alt="Hero Image"
 			/>
 			<div class="2xl:container mx-auto">
-				<div class="footer__content grid grid-cols-3">
-					<div class="col-span-1">
-						<img src="assets/img/logo.svg" alt="DML Logo" />
-						<p class="text-xl mt-5">&copy; 2025 Docmedilink. Inc.</p>
-						<div class="flex items-center gap-10 mt-16">
-							<img src="assets/img/hippa .svg" alt="Hippa Logo" />
-							<img src="assets/img/surescripts.svg" alt="Surescript Logo" />
+				<div class="footer__content grid md:grid-cols-3 grid-cols-1">
+					<div class="col-span-1 md:text-start text-center">
+						<img
+							class="md:mx-[unset] mx-auto"
+							src="assets/img/logo.svg"
+							alt="DML Logo"
+						/>
+						<p class="lg:text-xl md:text-lg text-base lg:mt-5 mt-2"
+							>&copy; 2025 Docmedilink. Inc.</p
+						>
+						<div
+							class="flex items-center md:justify-start justify-center lg:gap-10 gap-5 lg:mt-16 mt-7"
+						>
+							<img
+								class="w-[100px]"
+								src="assets/img/hippa .svg"
+								alt="Hippa Logo"
+							/>
+							<img
+								class="w-[100px]"
+								src="assets/img/surescripts.svg"
+								alt="Surescript Logo"
+							/>
 						</div>
 					</div>
-					<div class="col-span-2 grid grid-cols-3">
+					<div
+						class="col-span-2 grid md:grid-cols-3 md:text-start text-center md:mt-0 mt-8"
+					>
 						<div>
 							<h4 class="font-bold">Quick Links</h4>
-							<ul class="footer__menus flex flex-col gap-7 mt-5">
-								<li><a href="/index.html">Home</a></li>
+							<ul class="footer__menus flex flex-col md:gap-7 gap-4 mt-5">
+								<li><a class="active" href="/index.html">Home</a></li>
 								<li><a href="/services.html">Services</a></li>
-								<li
-									><a class="active" href="/clinicians.html">Clinicians</a></li
-								>
 								<li><a href="/index.html#about-us">About us</a></li>
+								<li><a href="/clinicians.html">Clinicians</a></li>
 								<li><a href="/index.html#contact-us">Contact us</a></li>
 							</ul>
 						</div>
-						<div>
+						<div class="md:mt-0 mt-12">
 							<h4 class="font-bold">Social Links</h4>
-							<ul class="flex flex-col gap-8 mt-5">
+							<ul class="flex flex-col lg:gap-7 gap-4 mt-5">
 								<li><a href="">Linkedin</a></li>
 								<li><a href="#">Facebook</a></li>
 							</ul>
 						</div>
-						<div>
+						<div class="md:mt-0 mt-12">
 							<h4 class="font-bold">Contacts</h4>
-							<ul class="flex flex-col gap-8 mt-5">
+							<ul class="flex flex-col md:gap-7 gap-4 mt-5">
 								<li
 									><a href="mailto:info@docmedilink.com"
 										>info@docmedilink.com</a

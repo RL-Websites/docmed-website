@@ -79,6 +79,37 @@
 			@apply py-5 w-3/12;
 		}
 	}
+
+	.work {
+		&__frame {
+			width: 100%;
+		}
+		&__img {
+			width: 100px;
+		}
+		&__cards {
+			background-image: none;
+		}
+		&__card {
+			@apply ms-[unset] rotate-[2deg];
+			&--alt {
+				@apply rotate-[-2deg] -mt-4;
+			}
+		}
+		&__content {
+			@apply px-5 py-10;
+		}
+		&__number {
+			@apply text-xl w-[40px] h-[40px] -top-2.5 left-20;
+			&--alt {
+				top: unset;
+				@apply w-[40px] h-[40px] -rotate-[26deg] bottom-4 left-28;
+			}
+		}
+		&__heading {
+			@apply text-[20px];
+		}
+	}
 }
 
 @media only screen and (max-width: 768px) {
@@ -94,6 +125,29 @@
 	.serve {
 		&__desc {
 			@apply text-base leading-6;
+		}
+		&__number {
+			@apply text-lg;
+		}
+	}
+
+	.work {
+		&__content {
+			@apply px-5 py-16;
+		}
+		&__number {
+			@apply text-xl w-[40px] h-[40px] -top-2.5 left-20;
+			&--alt {
+				top: unset;
+				@apply w-[40px] h-[40px] -rotate-[26deg] bottom-4 left-28;
+			}
+		}
+		&__img {
+			margin-top: 50px;
+			width: 180px;
+		}
+		&__heading {
+			@apply text-[30px];
 		}
 	}
 }

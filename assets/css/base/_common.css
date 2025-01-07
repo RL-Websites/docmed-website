@@ -12,10 +12,23 @@
 .frame-mob {
 	display: none;
 }
+.sm-block {
+	display: none;
+}
+.sm-hidden {
+	display: inline-block;
+}
 
 @media only screen and (max-width: 992px) {
 	section {
 		@apply px-4;
+	}
+
+	.sm-block {
+		display: inline-block;
+	}
+	.sm-hidden {
+		display: none;
 	}
 
 	.frame-mob {
