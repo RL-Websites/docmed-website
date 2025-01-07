@@ -1,9 +1,21 @@
 .dml-btn {
 	@apply text-xl font-semibold leading-5 text-center inline-block;
 	&__primary {
-		@apply bg-primary hover:bg-transparent duration-300 text-white hover:text-primary border-[1px] border-primary py-2.5 px-[38px] rounded-[5px];
+		@apply bg-primary hover:bg-transparent duration-300 text-white hover:text-primary border-[1px] border-primary py-2.5 px-[38px] rounded-[10px];
 	}
 	&__outline {
 		@apply bg-transparent hover:bg-primary duration-300 text-primary hover:text-white border-[1px] border-primary py-2.5 px-[38px] rounded-[5px] capitalize;
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	.dml-btn {
+		@apply text-lg;
+		&__primary {
+			@apply py-1.5 px-6 rounded-[5px];
+		}
+		&__outline {
+			@apply py-1.5 px-6 rounded-[5px];
+		}
 	}
 }

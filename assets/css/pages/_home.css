@@ -31,14 +31,22 @@
 			@apply hidden;
 		}
 		&__content {
-			@apply relative md:pt-[50px] pt-[30px] pb-[100px];
+			@apply relative pb-[70px] top-[50px];
 			&--mob {
 				@apply flex flex-col gap-5 items-center mt-8;
 			}
 			&--title {
 				border: 1px solid var(--secondary);
-				@apply py-2 px-4 inline-block;
+				@apply py-2 px-6 inline-block rounded-[5px];
 			}
 		}
 	}
+	.services {
+		&__cards {
+			@apply mt-10;
+		}
+	}
+}
+
+@media only screen and (max-width: 768px) {
 }

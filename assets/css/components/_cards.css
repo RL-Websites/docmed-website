@@ -63,3 +63,20 @@
 		@apply w-[130px] text-center;
 	}
 }
+
+@media only screen and (max-width: 768px) {
+	.services {
+		&__card {
+			@apply pt-0 pb-4;
+			&__heading {
+				@apply relative top-[-20px] left-1/2 -translate-x-1/2 text-center  inline-block;
+			}
+		}
+	}
+
+	.serve {
+		&__desc {
+			@apply text-base leading-6;
+		}
+	}
+}

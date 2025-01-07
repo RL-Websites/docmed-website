@@ -50,14 +50,44 @@
 		<!--====||  Header Section End ||====-->
 
 		<!--====||  Main Section Start ||====-->
-		<main class="lg:pt-[130px] pt[80px] overflow-x-hidden">
+		<main class="lg:pt-[130px] pt-[80px] overflow-x-hidden">
 			<!--====|| Hero Section Start ||====-->
 			<section class="hero">
 				<!--Frame Integration Start-->
 				<div class="frame-mob">
 					<img
-						class="absolute -z-10 left-0 top-20"
-						src="assets/img/frame/hash-1.svg"
+						class="absolute -z-10 -left-7 top-[50px]"
+						src="assets/img/frame/hash-2.svg"
+						alt="Frame"
+					/>
+					<img
+						class="absolute -z-10 left-7 top-[170px] w-8"
+						src="assets/img/frame/clip-2.svg"
+						alt="Frame"
+					/>
+					<img
+						class="absolute -z-10 -left-3 top-[220px] w-8 rotate-[25deg]"
+						src="assets/img/frame/star-alt.svg"
+						alt="Frame"
+					/>
+					<img
+						class="absolute -z-10 -right-3 top-[100px] w-10 rotate-[25deg]"
+						src="assets/img/frame/blink-1.svg"
+						alt="Frame"
+					/>
+					<img
+						class="absolute -z-10 left-2/3 top-[160px] w-10"
+						src="assets/img/frame/diamond.svg"
+						alt="Frame"
+					/>
+					<img
+						class="absolute -z-10 left-2/3 top-1/2 w-7"
+						src="assets/img/frame/gear-1.svg"
+						alt="Frame"
+					/>
+					<img
+						class="absolute -z-10 right-0 top-1/2 w-2"
+						src="assets/img/frame/d-1.svg"
 						alt="Frame"
 					/>
 				</div>
@@ -69,7 +99,8 @@
 							>Anywhere.</span
 						>
 					</h1>
-					<h3 class="font-bold lg:mt-6 mt-3"
+					<h3
+						class="font-bold lg:mt-6 mt-3 lg:text-[40px] md:text-[30px] text-[15px]"
 						>The Future of Healthcare, Delivered.</h3
 					>
 					<a
@@ -99,7 +130,7 @@
 				id="our-services"
 			>
 				<!--Frame Integration Start-->
-				<div>
+				<div class="frame-none">
 					<img
 						class="absolute -z-10 -left-[122px]"
 						src="assets/img/frame/gear-1.svg"
@@ -119,10 +150,12 @@
 				<!--Frame Integration End-->
 
 				<div class="2xl:container mx-auto">
-					<h1 class="font-bold"
+					<h1 class="font-bold md:text-start text-center"
 						>Our <span class="text-primary">Services</span>
 					</h1>
-					<div class="services__cards grid lg:grid-cols-3 gap-x-5 gap-y-16">
+					<div
+						class="services__cards grid lg:grid-cols-3 gap-x-5 md:gap-y-16 gap-y-10"
+					>
 						<div class="services__card">
 							<h5 class="services__card__heading bg-green"
 								>Virtual Consultations</h5
@@ -196,22 +229,27 @@
 				<!--Frame Integration Start-->
 				<div>
 					<img
+						class="absolute -z-10 -right-[100px] -top-24 w-[200px] md:hidden block"
+						src="assets/img/frame/dice-1.svg"
+						alt="Frame"
+					/>
+					<img
 						class="absolute -z-10 left-5 top-1/2"
 						src="assets/img/frame/star-1.svg"
 						alt="Frame"
 					/>
 					<img
-						class="absolute -z-10 left-2/3"
+						class="absolute -z-10 left-3/4 top-20"
 						src="assets/img/frame/gear-2.svg"
 						alt="Frame"
 					/>
 					<img
-						class="absolute -z-10 top-1/2 right-5"
+						class="absolute -z-10 md:top-1/2 top-[55%] right-5"
 						src="assets/img/frame/blink-1.svg"
 						alt="Frame"
 					/>
 					<img
-						class="absolute -z-10 -bottom-10 left-1/4"
+						class="absolute -z-10 -bottom-10 md:left-1/4 left-0"
 						src="assets/img/frame/blink-1.svg"
 						alt="Frame"
 					/>
@@ -222,25 +260,27 @@
 					<!--Frame Integration Start-->
 					<div>
 						<img
-							class="absolute -z-10 -bottom-8 right-16"
+							class="absolute -z-10 md:-bottom-8 -bottom-2 right-16"
 							src="assets/img/frame/d-1.svg"
 							alt="Frame"
 						/>
 						<img
-							class="absolute -z-10 -bottom-28 right-0"
+							class="absolute -z-10 md:-bottom-28 -bottom-20 right-0"
 							src="assets/img/frame/diamond.svg"
 							alt="Frame"
 						/>
 					</div>
 					<!--Frame Integration End-->
-					<h1 class="font-bold"
+					<h1 class="font-bold md:text-start text-center"
 						>Who <span class="text-primary">We Serve</span>
 					</h1>
-					<div class="serve-cards grid grid-cols-2 gap-20 mt-16">
-						<div class="serve-card">
+					<div
+						class="serve-cards grid md:grid-cols-2 grid-cols-1 md:gap-20 sm:gap-10 gap-5 mt-16"
+					>
+						<div class="serve-card md:text-start text-center">
 							<i class="icon-stethoscope text-[130px]"></i>
-							<h3 class="font-bold mt-2">Healthcare Providers</h3>
-							<p class="serve__desc"
+							<h3 class="font-bold mt-4">Healthcare Providers</h3>
+							<p class="serve__desc mt-2"
 								>Expand your practice with our cutting-edge telehealth platform,
 								specifically designed to cater to the diverse needs of patients.
 								Whether it's weight management, urgent care, or specialized
@@ -249,10 +289,10 @@
 							</p>
 						</div>
 						<!-- Serve Card End -->
-						<div class="serve-card">
+						<div class="serve-card md:text-start text-center">
 							<i class="icon-suitcase text-[130px]"></i>
-							<h3 class="font-bold mt-2">Healthcare Entrepreneurs</h3>
-							<p class="serve__desc"
+							<h3 class="font-bold mt-4">Healthcare Entrepreneurs</h3>
+							<p class="serve__desc mt-2"
 								>Are you ready to venture into the thriving world of virtual
 								healthcare? Our turnkey telehealth solutions make it easy for
 								entrepreneurs to establish robust virtual services with minimal
@@ -262,9 +302,12 @@
 						</div>
 						<!-- Serve Card End -->
 					</div>
-					<div class="flex justify-end mt-8">
+					<div class="flex sm:justify-end justify-center mt-8">
 						<a href="who-we-serve.html"
-							><img src="assets/img/lg-arrow-right.svg" alt="Arrow"
+							><img
+								class="md:max-w-[385px] sm:max-w-[250px] max-w-[200px]"
+								src="assets/img/lg-arrow-right.svg"
+								alt="Arrow"
 						/></a>
 					</div>
 				</div>
@@ -276,7 +319,7 @@
 				class="features lg:pt-[150px] md:pt-[80px] pt-[50px] relative z-10"
 			>
 				<!--Frame Integration Start-->
-				<div>
+				<div class="frame-none">
 					<img
 						class="absolute -z-10 top-[180px] -left-[122px]"
 						src="assets/img/frame/gear-1.svg"
@@ -290,17 +333,70 @@
 				</div>
 				<!--Frame Integration End-->
 				<div class="2xl:container mx-auto">
-					<h1 class="font-bold"
+					<h1 class="font-bold md:text-start text-center"
 						>Telehealth <span class="text-primary">Features</span>
 					</h1>
 					<div>
-						<div class="features__img mt-[100px]">
+						<div class="features__img mt-[100px] md:block hidden">
 							<img
 								class="w-full"
 								src="assets/img/features.svg"
 								alt="Features"
 							/>
 						</div>
+					</div>
+
+					<div
+						class="serve-cards grid md:grid-cols-2 grid-cols-1 md:gap-20 sm:gap-10 gap-7 mt-16 md:hidden"
+					>
+						<div class="serve-card md:text-start text-center">
+							<i class="icon-video-cal text-[60px]"></i>
+							<p class="serve__desc mt-2"
+								>Connect directly with patients through secure, scheduled video
+								or audio consultations.
+							</p>
+						</div>
+						<!-- Serve Card End -->
+						<div class="serve-card md:text-start text-center">
+							<i class="icon-calendar text-[60px]"></i>
+							<p class="serve__desc mt-2"
+								>Leverage integrated lab solutions to seamlessly schedule tests,
+								review results, and prescribe treatments in one platform.
+							</p>
+						</div>
+						<!-- Serve Card End -->
+						<div class="serve-card md:text-start text-center">
+							<i class="icon-certification text-[60px]"></i>
+							<p class="serve__desc mt-2"
+								>Optimize medication management with our SureScripts-certified
+								prescription platform.
+							</p>
+						</div>
+						<!-- Serve Card End -->
+						<div class="serve-card md:text-start text-center">
+							<i class="icon-paint-board text-[60px]"></i>
+							<p class="serve__desc mt-2"
+								>Tailor our white-label solutions to align with your brand’s
+								unique needs and identity.
+							</p>
+						</div>
+						<!-- Serve Card End -->
+						<div class="serve-card md:text-start text-center">
+							<i class="icon-map text-[60px]"></i>
+							<p class="serve__desc mt-2"
+								>Access a nationwide provider network, offering consistent,
+								top-tier healthcare services across all 50 states.
+							</p>
+						</div>
+						<!-- Serve Card End -->
+						<div class="serve-card md:text-start text-center">
+							<i class="icon-gear-round text-[60px]"></i>
+							<p class="serve__desc mt-2"
+								>Simplify patient interactions with detailed and convenient
+								asynchronous questionnaires.
+							</p>
+						</div>
+						<!-- Serve Card End -->
 					</div>
 				</div>
 			</section>
@@ -311,17 +407,17 @@
 				<!--Frame Integration Start-->
 				<div>
 					<img
-						class="absolute -z-10 -top-5 left-1/4"
+						class="absolute -z-10 md:-top-5 top-5 md:left-1/4 left-2"
 						src="assets/img/frame/blink-1.svg"
 						alt="Frame"
 					/>
 					<img
-						class="absolute -z-10 top-28 left-10"
+						class="absolute -z-10 md:top-28 top-32 md:left-10 -left-6"
 						src="assets/img/frame/clip-1.svg"
 						alt="Frame"
 					/>
 					<img
-						class="absolute -z-10 -top-5 -right-6"
+						class="absolute -z-10 -top-5 -right-6 md:w-[122px] w-[62px]"
 						src="assets/img/frame/hash-1.svg"
 						alt="Frame"
 					/>
@@ -355,58 +451,68 @@
 				<!--Frame Integration Start-->
 				<div>
 					<img
-						class="absolute -z-10 top-0 right-0"
+						class="absolute -z-10 top-0 md:right-0 -right-2 md:w-[168px] w-[80px]"
 						src="assets/img/frame/blink-2.svg"
 						alt="Frame"
 					/>
 					<img
-						class="absolute -z-10 -bottom-[170px] -left-[140px] rotate-180"
+						class="absolute -z-10 md:-bottom-[170px] bottom-[200px] md:-left-[140px] -left-[80px] rotate-180 md:w-[340px] w-[180px]"
 						src="assets/img/frame/dice-1.svg"
 						alt="Frame"
 					/>
 				</div>
 				<!--Frame Integration End-->
 				<div class="2xl:container mx-auto">
-					<h1 class="font-bold"
+					<h1 class="font-bold md:text-start text-center"
 						>Why Choose <span class="text-primary">Docmedilink?</span>
 					</h1>
-					<div class="why-choose__cards grid grid-cols-4 gap-20 mt-16">
+					<div
+						class="why-choose__cards grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 md:gap-20 gap-10 md:mt-16 sm:mt-12 mt-8 md:text-start text-center"
+					>
 						<div class="why-choose__card">
-							<i class="icon-idea text-[120px]"></i>
+							<i
+								class="icon-idea md:text-[120px] sm:text-[80px] text-[60px]"
+							></i>
 							<h4 class="font-bold mt-2"
 								>Innovation <i class="icon-right-arrow text-xl"></i
 							></h4>
-							<p class="why-choose__desc"
+							<p class="why-choose__desc mt-2"
 								>Expand your practice with our cutting-edge . . .
 							</p>
 						</div>
 						<!-- why-choose Card End -->
 						<div class="why-choose__card">
-							<i class="icon-mobile text-[120px]"></i>
+							<i
+								class="icon-mobile md:text-[120px] sm:text-[80px] text-[60px]"
+							></i>
 							<h4 class="font-bold mt-2"
 								>Usability <i class="icon-right-arrow text-xl"></i
 							></h4>
-							<p class="why-choose__desc"
+							<p class="why-choose__desc mt-2"
 								>Expand your practice with our cutting-edge . . .
 							</p>
 						</div>
 						<!-- why-choose Card End -->
 						<div class="why-choose__card">
-							<i class="icon-mobile text-[120px]"></i>
+							<i
+								class="icon-mobile md:text-[120px] sm:text-[80px] text-[60px]"
+							></i>
 							<h4 class="font-bold mt-2"
 								>Security <i class="icon-right-arrow text-xl"></i
 							></h4>
-							<p class="why-choose__desc"
+							<p class="why-choose__desc mt-2"
 								>Expand your practice with our cutting-edge . . .
 							</p>
 						</div>
 						<!-- why-choose Card End -->
 						<div class="why-choose__card">
-							<i class="icon-handshake text-[120px]"></i>
+							<i
+								class="icon-handshake md:text-[120px] sm:text-[80px] text-[60px]"
+							></i>
 							<h4 class="font-bold mt-2"
 								>Reliability <i class="icon-right-arrow text-xl"></i
 							></h4>
-							<p class="why-choose__desc"
+							<p class="why-choose__desc mt-2"
 								>Expand your practice with our cutting-edge . . .
 							</p>
 						</div>
@@ -424,22 +530,24 @@
 				<!--Frame Integration Start-->
 				<div>
 					<img
-						class="absolute -z-10 top-10 right-12"
+						class="absolute -z-10 md:top-10 -top-[500px] md:right-12 right-2"
 						src="assets/img/frame/clip-2.svg"
 						alt="Frame"
 					/>
 					<img
-						class="absolute -z-10 top-[200px] right-0"
+						class="absolute -z-10 md:top-[200px] -top-[250px] md:right-0 -right-10"
 						src="assets/img/frame/diamond.svg"
 						alt="Frame"
 					/>
 				</div>
 				<!--Frame Integration End-->
 				<div class="2xl:container mx-auto">
-					<h1 class="font-bold mb-7"> About Us </h1>
+					<h1 class="font-bold mb-7 md:text-start text-center">
+						About <span class="text-primary">Us</span>
+					</h1>
 					<div class="accordion">
 						<button
-							class="question-btn font-bold py-7 w-full flex justify-between items-center"
+							class="question-btn font-bold md:py-7 py-4 w-full flex justify-between items-center text-start"
 							data-toggle="answer-1"
 						>
 							<h3>Continuous Innovation </h3>
@@ -447,7 +555,7 @@
 								class="icon-arrow-down accordion__icon rotate-0 inline-block transition-transform duration-300 text-3xl"
 							></i>
 						</button>
-						<div class="answer hidden pb-7" id="answer-1">
+						<div class="answer hidden lg:pb-7 pb-3" id="answer-1">
 							<p class="text-lg">
 								We are committed to staying at the forefront of technological
 								advancements to meet the ever-changing needs of the healthcare
@@ -465,7 +573,7 @@
 
 					<div class="accordion">
 						<button
-							class="question-btn font-bold py-7 w-full flex justify-between items-center"
+							class="question-btn font-bold md:py-7 py-4 w-full flex justify-between items-center text-start"
 							data-toggle="answer-2"
 						>
 							<h3>Empathy at the Core </h3>
@@ -473,7 +581,7 @@
 								class="icon-arrow-down accordion__icon rotate-0 inline-block transition-transform duration-300 text-3xl"
 							></i>
 						</button>
-						<div class="answer hidden pb-7" id="answer-2">
+						<div class="answer hidden lg:pb-7 pb-3" id="answer-2">
 							<p class="text-lg"
 								>At Docmedilink, compassion is the foundation of our work. We
 								understand the importance of accessible, patient-focused
@@ -491,7 +599,7 @@
 
 					<div class="accordion">
 						<button
-							class="question-btn font-bold py-7 w-full flex justify-between items-cente"
+							class="question-btn font-bold md:py-7 py-4 w-full flex justify-between items-cente"
 							data-toggle="answer-3"
 						>
 							<h3>Commitment to Excellence</h3>
@@ -499,7 +607,7 @@
 								class="icon-arrow-down accordion__icon rotate-0 inline-block transition-transform duration-300 text-3xl"
 							></i>
 						</button>
-						<div class="answer hidden pb-7" id="answer-3">
+						<div class="answer hidden lg:pb-7 pb-3" id="answer-3">
 							<p class="text-lg">
 								We listen intently to our clients, understanding their unique
 								challenges and aspirations to deliver tailored, exceptional
@@ -534,10 +642,10 @@
 				<!--Frame Integration End-->
 
 				<div class="2xl:container mx-auto">
-					<h1 class="font-bold mb-7">FAQ </h1>
+					<h1 class="font-bold mb-7 md:text-start text-center">FAQ </h1>
 					<div class="accordion">
 						<button
-							class="question-btn font-bold py-7 w-full flex justify-between items-center"
+							class="question-btn font-bold md:py-7 py-4 w-full flex justify-between items-center text-start"
 							data-toggle="faq-1"
 						>
 							<h3>1. How easy is it to use your solutions?</h3>
@@ -545,7 +653,7 @@
 								class="icon-arrow-down accordion__icon rotate-0 inline-block transition-transform duration-300 text-3xl"
 							></i>
 						</button>
-						<div class="answer hidden pb-7" id="faq-1">
+						<div class="answer hidden md:pb-7 pb-3" id="faq-1">
 							<p class="text-lg">
 								Our software is designed with user-friendliness in mind. We
 								offer intuitive interfaces and comprehensive training materials
@@ -558,7 +666,7 @@
 
 					<div class="accordion">
 						<button
-							class="question-btn font-bold py-7 w-full flex justify-between items-center"
+							class="question-btn font-bold md:py-7 py-4 w-full flex justify-between items-center text-start"
 							data-toggle="faq-2"
 						>
 							<h3>2. What kind of support do you offer?</h3>
@@ -566,7 +674,7 @@
 								class="icon-arrow-down accordion__icon rotate-0 inline-block transition-transform duration-300 text-3xl"
 							></i>
 						</button>
-						<div class="answer hidden pb-7" id="faq-2">
+						<div class="answer hidden md:pb-7 pb-3" id="faq-2">
 							<p class="text-lg"
 								>We offer comprehensive customer support over phone and e-mail
 								to ensure you receive the assistance you need. Our team is
@@ -579,7 +687,7 @@
 
 					<div class="accordion">
 						<button
-							class="question-btn font-bold py-7 w-full flex justify-between items-cente"
+							class="question-btn font-bold md:py-7 py-4 w-full flex justify-between items-center text-start"
 							data-toggle="faq-3"
 						>
 							<h3
@@ -589,7 +697,7 @@
 								class="icon-arrow-down accordion__icon rotate-0 inline-block transition-transform duration-300 text-3xl"
 							></i>
 						</button>
-						<div class="answer hidden pb-7" id="faq-3">
+						<div class="answer hidden md:pb-7 pb-3" id="faq-3">
 							<p class="text-lg">
 								We encourage you to contact us directly for detailed information
 								on software functionality, and to discuss your specific needs
@@ -601,7 +709,7 @@
 
 					<div class="accordion">
 						<button
-							class="question-btn font-bold py-7 w-full flex justify-between items-cente"
+							class="question-btn font-bold md:py-7 py-4 w-full flex justify-between items-center text-start"
 							data-toggle="faq-4"
 						>
 							<h3>4. Do you require long-term contracts?</h3>
@@ -609,7 +717,7 @@
 								class="icon-arrow-down accordion__icon rotate-0 inline-block transition-transform duration-300 text-3xl"
 							></i>
 						</button>
-						<div class="answer hidden pb-7" id="faq-4">
+						<div class="answer hidden md:pb-7 pb-3" id="faq-4">
 							<p class="text-lg"> No.</p>
 						</div>
 					</div>
@@ -617,7 +725,7 @@
 
 					<div class="accordion">
 						<button
-							class="question-btn font-bold py-7 w-full flex justify-between items-cente"
+							class="question-btn font-bold md:py-7 py-4 w-full flex justify-between items-center text-start"
 							data-toggle="faq-5"
 						>
 							<h3>5. Does Docmedilink support ePrescribing?</h3>
@@ -625,7 +733,7 @@
 								class="icon-arrow-down accordion__icon rotate-0 inline-block transition-transform duration-300 text-3xl"
 							></i>
 						</button>
-						<div class="answer hidden pb-7" id="faq-5">
+						<div class="answer hidden md:pb-7 pb-3" id="faq-5">
 							<p class="text-lg">
 								Yes, Docmedilink supports ePrescribing. Our software includes a
 								secure and efficient ePrescribing feature that allows healthcare
@@ -642,7 +750,7 @@
 
 					<div class="accordion">
 						<button
-							class="question-btn font-bold py-7 w-full flex justify-between items-cente"
+							class="question-btn font-bold md:py-7 py-4 w-full flex justify-between items-center text-start"
 							data-toggle="faq-6"
 						>
 							<h3>6. Is your platform HIPPA Compliant?</h3>
@@ -650,7 +758,7 @@
 								class="icon-arrow-down accordion__icon rotate-0 inline-block transition-transform duration-300 text-3xl"
 							></i>
 						</button>
-						<div class="answer hidden pb-7" id="faq-6">
+						<div class="answer hidden md:pb-7 pb-3" id="faq-6">
 							<p class="text-lg">
 								Yes, our platform is fully HIPAA compliant, ensuring the
 								protection and privacy of patient health information.
@@ -661,7 +769,7 @@
 
 					<div class="accordion">
 						<button
-							class="question-btn font-bold py-7 w-full flex justify-between items-cente"
+							class="question-btn font-bold md:py-7 py-4 w-full flex justify-between items-center text-start"
 							data-toggle="faq-7"
 						>
 							<h3>7. What devices are compatible with your platform?</h3>
@@ -669,7 +777,7 @@
 								class="icon-arrow-down accordion__icon rotate-0 inline-block transition-transform duration-300 text-3xl"
 							></i>
 						</button>
-						<div class="answer hidden pb-7" id="faq-7">
+						<div class="answer hidden md:pb-7 pb-3" id="faq-7">
 							<p class="text-lg">
 								Our platform is designed to be user-friendly and accessible
 								across various devices, including desktops, laptops, tablets,
@@ -681,7 +789,7 @@
 
 					<div class="accordion">
 						<button
-							class="question-btn font-bold py-7 w-full flex justify-between items-cente"
+							class="question-btn font-bold md:py-7 py-4 w-full flex justify-between items-center text-start"
 							data-toggle="faq-8"
 						>
 							<h3>8. Is my information safe and secure?</h3>
@@ -689,7 +797,7 @@
 								class="icon-arrow-down accordion__icon rotate-0 inline-block transition-transform duration-300 text-3xl"
 							></i>
 						</button>
-						<div class="answer hidden pb-7" id="faq-8">
+						<div class="answer hidden md:pb-7 pb-3" id="faq-8">
 							<p class="text-lg">
 								Docmedilink adheres to the national patient information security
 								standards found in both HIPAA and HITECH regulations, including
@@ -703,7 +811,7 @@
 
 					<div class="accordion">
 						<button
-							class="question-btn font-bold py-7 w-full flex justify-between items-cente"
+							class="question-btn font-bold md:py-7 py-4 w-full flex justify-between items-center text-start"
 							data-toggle="faq-9"
 						>
 							<h3>9. What can I expect to receive from my online visit?</h3>
@@ -711,7 +819,7 @@
 								class="icon-arrow-down accordion__icon rotate-0 inline-block transition-transform duration-300 text-3xl"
 							></i>
 						</button>
-						<div class="answer hidden pb-7" id="faq-9">
+						<div class="answer hidden md:pb-7 pb-3" id="faq-9">
 							<p class="text-lg">
 								Your board-certified doctor will review your case and then
 								provide you with a diagnosis and personalized treatment plan.
@@ -732,7 +840,7 @@
 
 					<div class="accordion">
 						<button
-							class="question-btn font-bold py-7 w-full flex justify-between items-cente"
+							class="question-btn font-bold md:py-7 py-4 w-full flex justify-between items-center text-start"
 							data-toggle="faq-10"
 						>
 							<h3>10. Will Docmedilink sell personal data?</h3>
@@ -740,7 +848,7 @@
 								class="icon-arrow-down accordion__icon rotate-0 inline-block transition-transform duration-300 text-3xl"
 							></i>
 						</button>
-						<div class="answer hidden pb-7" id="faq-10">
+						<div class="answer hidden md:pb-7 pb-3" id="faq-10">
 							<p class="text-lg">
 								No, per our terms of service Docmedilink will not sell your
 								personal data.
@@ -753,25 +861,28 @@
 			<!--====|| FAQ Section End ||====-->
 
 			<!--====|| Contact Section Start ||====-->
-			<section class="contact lg:py-[150px]" id="contact-us">
-				<div class="2xl:container mx-auto grid grid-cols-2">
-					<div class="pe-24">
-						<h2 class="font-bold"
+			<section
+				class="contact lg:py-[150px] md:py-[80px] py-[50px]"
+				id="contact-us"
+			>
+				<div class="2xl:container mx-auto grid md:grid-cols-2 gird-cols-1">
+					<div class="lg:pe-24 md:pe-10 pe-0">
+						<h2 class="font-bold md:text-start text-center"
 							>Your Health, <br />
 							Your Way <span class="text-primary block">Get in Touch </span></h2
 						>
-						<p class="text-lg mt-7"
+						<p class="text-lg lg:mt-7 mt-3 md:text-start text-center"
 							>We’re here to help you shape the future of healthcare. Reach out
 							and let’s create something extraordinary together!</p
 						>
 						<img
-							class="w-full mt-16"
+							class="w-full lg:mt-16 md:mt-8 mt-0 md:block hidden"
 							src="assets/img/contact.png"
 							alt="Contact"
 						/>
 					</div>
 					<div>
-						<div class="input__wrapper">
+						<div class="input__wrapper lg:p-7 p-4 md:mt-0 mt-5">
 							<form>
 								<div class="input__item">
 									<label class="input__label" for="companyName">
@@ -779,7 +890,7 @@
 									</label>
 									<input class="input__box" id="companyName" type="text" />
 								</div>
-								<div class="flex gap-5">
+								<div class="md:flex block lg:gap-5 gap-3">
 									<div class="input__item">
 										<label class="input__label" for="fName"> First Name </label>
 										<input class="input__box" id="fName" type="text" />
@@ -789,7 +900,7 @@
 										<input class="input__box" id="lName" type="text" />
 									</div>
 								</div>
-								<div class="flex gap-5">
+								<div class="md:flex block lg:gap-5 gap-3">
 									<div class="input__item">
 										<label class="input__label" for="email">
 											Email Address

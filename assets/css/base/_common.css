@@ -12,6 +12,7 @@
 .frame-mob {
 	display: none;
 }
+
 @media only screen and (max-width: 992px) {
 	section {
 		@apply px-4;
@@ -20,4 +21,10 @@
 	.frame-mob {
 		display: block;
 	}
+	.frame-none {
+		@apply hidden;
+	}
+}
+
+@media only screen and (max-width: 768px) {
 }
