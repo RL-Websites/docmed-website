@@ -64,6 +64,23 @@
 	}
 }
 
+@media only screen and (max-width: 992px) {
+	.all-service {
+		&__card {
+			@apply rounded-s-[50px]  rounded-tl-none;
+		}
+		&__left {
+			@apply py-5 ps-5 w-9/12 block;
+			&--alt {
+				@apply w-9/12 block;
+			}
+		}
+		&__right {
+			@apply py-5 w-3/12;
+		}
+	}
+}
+
 @media only screen and (max-width: 768px) {
 	.services {
 		&__card {

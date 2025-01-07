@@ -27,6 +27,7 @@
 
 @media only screen and (max-width: 992px) {
 	.hero {
+		@apply py-[50px];
 		&__img {
 			@apply hidden;
 		}
