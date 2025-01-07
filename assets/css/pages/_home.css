@@ -9,6 +9,9 @@
 		&--alt {
 			@apply max-w-[1240px] text-start top-[35%];
 		}
+		&--mob {
+			@apply hidden;
+		}
 	}
 }
 /*===| Hero CSS  End |===*/
@@ -22,13 +25,20 @@
 
 /*===| Who Serve CSS  End |===*/
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
 	.hero {
 		&__img {
 			@apply hidden;
 		}
 		&__content {
-			@apply relative pt-[50px] pb-[80px];
+			@apply relative md:pt-[50px] pt-[30px] pb-[100px];
+			&--mob {
+				@apply flex flex-col gap-5 items-center mt-8;
+			}
+			&--title {
+				border: 1px solid var(--secondary);
+				@apply py-2 px-4 inline-block;
+			}
 		}
 	}
 }

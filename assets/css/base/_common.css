@@ -9,8 +9,15 @@
 	border-bottom: 1px solid var(--blue-light-1);
 	@apply pb-4;
 }
+.frame-mob {
+	display: none;
+}
 @media only screen and (max-width: 992px) {
 	section {
 		@apply px-4;
+	}
+
+	.frame-mob {
+		display: block;
 	}
 }
