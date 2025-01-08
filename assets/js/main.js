@@ -33,12 +33,35 @@ $(document).ready(function () {
 
 	var currentPath = window.location.pathname;
 
-	$(".header__menus a").each(function () {
-		if ($(this).attr("href") === currentPath) {
-			$(".header__menus a").removeClass("active");
-			$(this).addClass("active");
-		}
-	});
+	function updateActiveMenu() {
+		const $sections = $("section");
+		const $menuLinks = $(".menu-link");
+
+		let currentSection = "";
+
+		$sections.each(function () {
+			const $section = $(this);
+			const sectionTop = $section.offset().top;
+			const sectionHeight = $section.outerHeight();
+			console.log(sectionTop - sectionHeight / 3);
+
+			if ($(window).scrollTop() >= sectionTop - sectionHeight / 3) {
+				currentSection = $section.attr("id");
+			}
+		});
+
+		$menuLinks.removeClass("active");
+		$menuLinks.each(function () {
+			const $link = $(this);
+			if ($link.attr("href") === `#${currentSection}`) {
+				$link.addClass("active");
+			}
+		});
+	}
+	updateActiveMenu();
+
+	$(window).on("scroll", updateActiveMenu);
+
 	// Header Menu Active Class added
 
 	$(".toggle-menu").click(function () {
