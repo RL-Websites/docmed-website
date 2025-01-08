@@ -49,10 +49,7 @@
 		display: block;
 	}
 	.header {
-		@apply py-5;
-		&.sticky {
-			@apply py-5 px-5;
-		}
+		height: 90px;
 		&__menus {
 			ul {
 				@apply hidden;
