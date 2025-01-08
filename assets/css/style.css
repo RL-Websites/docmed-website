@@ -1737,12 +1737,12 @@ h6 {
 		top: 50%;
 	}.md\:top-10{
 		top: 2.5rem;
+	}.md\:top-20{
+		top: 5rem;
 	}.md\:top-28{
 		top: 7rem;
 	}.md\:top-\[200px\]{
 		top: 200px;
-	}.md\:top-20{
-		top: 5rem;
 	}.md\:order-1{
 		order: 1;
 	}.md\:order-2{
