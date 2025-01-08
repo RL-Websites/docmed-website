@@ -93,4 +93,6 @@ $(document).ready(function () {
 			);
 		} // End if
 	});
+	// Smooth Scroll Animation
 });
+AOS.init();
