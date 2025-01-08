@@ -26,7 +26,7 @@ module.exports = {
 		},
 		container: {
 			screens: {
-				"2xl": "1240px",
+				lg: "1240px",
 			},
 		},
 	},

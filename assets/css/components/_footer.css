@@ -1,7 +1,13 @@
 .footer {
 	@apply border-t border-blue-light-1 relative;
+	&__img {
+		@apply absolute;
+		z-index: -10;
+		left: 50%;
+		transform: translateX(-50%);
+	}
 	&__content {
-		@apply px-5 absolute z-10 top-[100px] left-1/2 translate-x-[-50%]  w-full;
+		@apply px-5 relative z-10 top-[50px] left-1/2 translate-x-[-50%] max-w-[1240px]  w-full;
 	}
 	&__menus {
 		.active {

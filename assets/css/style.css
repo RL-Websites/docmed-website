@@ -1,4 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");.visible{
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");.container{
+	width: 100%;
+}@media (min-width: 1240px){.container{
+		max-width: 1240px;
+	}
+}.visible{
 	visibility: visible;
 }.static{
 	position: static;
@@ -1286,12 +1291,18 @@ h6 {
 	position: relative;
 	border-top-width: 1px;
 	border-color: var(--blue-light-1);
-}.footer__content{
+}.footer__img{
 	position: absolute;
-	top: 100px;
+		z-index: -10;
+		left: 50%;
+		transform: translateX(-50%);
+}.footer__content{
+	position: relative;
+	top: 50px;
 	left: 50%;
 	z-index: 10;
 	width: 100%;
+	max-width: 1240px;
 	--tw-translate-x: -50%;
 	transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 	padding-left: 1.25rem;
@@ -1690,12 +1701,6 @@ h6 {
 		margin-top: 2.5rem;
 	}
 }@media only screen and (max-width: 768px) {
-}@media (min-width: 1536px){.\32xl\:container{
-		width: 100%;
-	}@media (min-width: 1240px){.\32xl\:container{
-			max-width: 1240px;
-		}
-	}
 }@media (min-width: 640px){.sm\:mt-12{
 		margin-top: 3rem;
 	}.sm\:max-w-\[250px\]{
