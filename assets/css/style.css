@@ -1318,7 +1318,7 @@ h6 {
 	font-weight: 600;
 	line-height: 1.25rem;
 }.dml-btn__primary{
-	border-radius: 10px;
+	border-radius: 5px;
 	border-width: 1px;
 	border-color: var(--primary);
 	background-color: var(--primary);
