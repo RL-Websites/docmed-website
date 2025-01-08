@@ -18,6 +18,9 @@
 .sm-hidden {
 	display: inline-block;
 }
+section {
+	@apply px-4;
+}
 
 @media only screen and (max-width: 992px) {
 	section {

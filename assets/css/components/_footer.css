@@ -1,7 +1,7 @@
 .footer {
 	@apply border-t border-blue-light-1 relative;
 	&__content {
-		@apply absolute z-10 top-[100px] left-1/2 translate-x-[-50%]  w-full max-w-[1240px];
+		@apply px-5 absolute z-10 top-[100px] left-1/2 translate-x-[-50%]  w-full;
 	}
 	&__menus {
 		.active {
@@ -12,7 +12,7 @@
 
 @media only screen and (max-width: 992px) {
 	.footer {
-		@apply py-[50px] px-5;
+		@apply py-[50px];
 		&__content {
 			@apply relative top-[unset];
 		}
