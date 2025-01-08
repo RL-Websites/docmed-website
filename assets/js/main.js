@@ -43,7 +43,6 @@ $(document).ready(function () {
 			const $section = $(this);
 			const sectionTop = $section.offset().top;
 			const sectionHeight = $section.outerHeight();
-			console.log(sectionTop - sectionHeight / 3);
 
 			if ($(window).scrollTop() >= sectionTop - sectionHeight / 3) {
 				currentSection = $section.attr("id");
