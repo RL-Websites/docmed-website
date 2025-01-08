@@ -1643,7 +1643,7 @@ h6 {
 	width: 100%;
 }.hero__content{
 	position: absolute;
-	top: 100px;
+	top: 200px;
 	left: 50%;
 	z-index: 10;
 	width: 100%;
@@ -1658,7 +1658,11 @@ h6 {
 	display: none;
 }/*===| Hero CSS  End |===*/.services__cards{
 	margin-top: 5rem;
-}/*===| Services CSS  End |===*//*===| Who Serve CSS  End |===*/@media only screen and (max-width: 992px) {
+}/*===| Services CSS  End |===*//*===| Who Serve CSS  End |===*/@media only screen and (max-width: 1240px) {
+		.hero__content {
+			top: 100px;
+		}
+}@media only screen and (max-width: 992px) {
 	.hero{
 		padding-top: 50px;
 		padding-bottom: 50px;
@@ -1737,6 +1741,8 @@ h6 {
 		top: 7rem;
 	}.md\:top-\[200px\]{
 		top: 200px;
+	}.md\:top-20{
+		top: 5rem;
 	}.md\:order-1{
 		order: 1;
 	}.md\:order-2{
@@ -1838,6 +1844,8 @@ h6 {
 		top: -5rem;
 	}.lg\:left-\[unset\]{
 		left: unset;
+	}.lg\:top-\[100px\]{
+		top: 100px;
 	}.lg\:mt-10{
 		margin-top: 2.5rem;
 	}.lg\:mt-12{
