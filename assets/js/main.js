@@ -23,7 +23,7 @@ $(document).ready(function () {
 	const header = $("header");
 
 	$(window).on("scroll", function () {
-		if ($(this).scrollTop() > 100) {
+		if ($(this).scrollTop() > 300) {
 			header.addClass("sticky");
 		} else {
 			header.removeClass("sticky");

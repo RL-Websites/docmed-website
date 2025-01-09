@@ -9,7 +9,7 @@
 
 .all-service {
 	&__card {
-		@apply mt-5 flex  items-center  justify-between  rounded-t-none rounded-e-[10px] rounded-b-[10px] rounded-s-[80px] rounded-tl-none;
+		@apply flex  items-center  justify-between  rounded-t-none rounded-e-[10px] rounded-b-[10px] rounded-s-[80px] rounded-tl-none h-full;
 	}
 	&__left {
 		@apply py-12 ps-10 w-8/12;
@@ -70,13 +70,13 @@
 			@apply rounded-s-[50px]  rounded-tl-none;
 		}
 		&__left {
-			@apply py-5 ps-5 w-9/12 block;
+			@apply py-4 ps-5 w-9/12 block;
 			&--alt {
 				@apply w-9/12 block;
 			}
 		}
 		&__right {
-			@apply py-5 w-3/12;
+			@apply py-4 w-3/12;
 		}
 	}
 
@@ -148,6 +148,22 @@
 		}
 		&__heading {
 			@apply text-[30px];
+		}
+	}
+
+	.all-service {
+		&__card {
+			@apply rounded-s-[50px] flex-col  rounded-tl-none;
+		}
+		&__left {
+			@apply w-full;
+		}
+		&__right {
+			@apply w-full py-0 pe-0;
+			img {
+				max-width: 230px;
+				margin-left: auto;
+			}
 		}
 	}
 }
