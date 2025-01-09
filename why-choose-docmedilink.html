@@ -11,9 +11,9 @@
 		/>
 
 		<!--====||  All CSS Integration Start ||====-->
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 		<link rel="stylesheet" href="assets/icons/style.css" />
 		<link rel="stylesheet" href="assets/css/style.css" />
-
 		<!--====||  All CSS Integration End ||====-->
 	</head>
 	<body>
@@ -81,9 +81,11 @@
 					class="hero__img"
 					src="assets/img/why-choose.png"
 					alt="Hero Image"
+					data-aos="fade-up"
+					data-aos-duration="500"
 				/>
 				<div class="hero__content">
-					<h1 class="font-medium"
+					<h1 class="font-medium" data-aos="fade-up" data-aos-duration="900"
 						>Why Choose<br /><span class="gradient-heading"> Docmedilink?</span>
 					</h1>
 				</div>
@@ -142,13 +144,22 @@
 						class="serve-cards grid md:grid-cols-2 grid-cols-1 lg:gap-x-[200px] sm:gap-x-10 gap-x-5 gap-y-12 lg:mt-10 mt-0"
 					>
 						<div class="serve-card md:text-start text-center">
-							<i class="icon-idea text-[130px]"></i>
+							<i
+								class="icon-idea text-[130px] inline-block"
+								data-aos="fade-up-right"
+								data-aos-duration="700"
+							></i>
 							<h3
 								class="font-bold mt-4 pb-3"
 								style="border-bottom: 1px solid #dadef2"
+								data-aos="fade-up-right"
+								data-aos-duration="900"
 								>Innovation</h3
 							>
-							<p class="serve__desc mt-4"
+							<p
+								class="serve__desc mt-4"
+								data-aos="fade-up-right"
+								data-aos-duration="1100"
 								>At Docmedilink, we leverage cutting-edge technologies to design
 								custom-built software tailored to meet your specific healthcare
 								needs. Our solutions seamlessly integrate with existing systems,
@@ -162,13 +173,22 @@
 						</div>
 						<!-- Serve Card End -->
 						<div class="serve-card md:text-start text-center">
-							<i class="icon-mobile text-[130px]"></i>
+							<i
+								class="icon-mobile text-[130px] inline-block"
+								data-aos="fade-up-left"
+								data-aos-duration="700"
+							></i>
 							<h3
 								class="font-bold mt-4 pb-3"
 								style="border-bottom: 1px solid #dadef2"
+								data-aos="fade-up-left"
+								data-aos-duration="900"
 								>Usability</h3
 							>
-							<p class="serve__desc mt-4"
+							<p
+								class="serve__desc mt-4"
+								data-aos="fade-up-left"
+								data-aos-duration="1100"
 								>Ease of use is at the core of our platform design. Our
 								intuitive interfaces minimize the learning curve for healthcare
 								providers, making it easy for your team to adopt and utilize the
@@ -181,13 +201,22 @@
 						</div>
 						<!-- Serve Card End -->
 						<div class="serve-card md:text-start text-center">
-							<i class="icon-lock text-[130px]"></i>
+							<i
+								class="icon-lock text-[130px] inline-block"
+								data-aos="fade-up-right"
+								data-aos-duration="700"
+							></i>
 							<h3
 								class="font-bold mt-4 pb-3"
 								style="border-bottom: 1px solid #dadef2"
+								data-aos="fade-up-right"
+								data-aos-duration="900"
 								>Security </h3
 							>
-							<p class="serve__desc mt-4"
+							<p
+								class="serve__desc mt-4"
+								data-aos="fade-up-right"
+								data-aos-duration="1100"
 								>We understand the critical importance of safeguarding sensitive
 								patient data. That’s why our solutions are engineered with
 								robust security measures and are fully compliant with HIPAA
@@ -200,13 +229,22 @@
 						</div>
 						<!-- Serve Card End -->
 						<div class="serve-card md:text-start text-center">
-							<i class="icon-certification text-[130px]"></i>
+							<i
+								class="icon-certification text-[130px] inline-block"
+								data-aos="fade-up-left"
+								data-aos-duration="700"
+							></i>
 							<h3
 								class="font-bold mt-4 pb-3"
 								style="border-bottom: 1px solid #dadef2"
+								data-aos="fade-up-left"
+								data-aos-duration="900"
 								>Reliability </h3
 							>
-							<p class="serve__desc mt-4"
+							<p
+								class="serve__desc mt-4"
+								data-aos="fade-up-left"
+								data-aos-duration="1100"
 								>Our platforms are built to provide dependable and scalable
 								solutions for your healthcare needs. Designed with redundancy
 								and fail-safe mechanisms, our systems ensure uninterrupted
@@ -221,8 +259,17 @@
 					</div>
 
 					<div class="text-center max-w-[610px] mx-auto lg:mt-20 mt-10">
-						<img class="mx-auto" src="assets/img/growth.png" alt="" />
-						<p class="serve__desc mt-4"
+						<img
+							class="mx-auto"
+							src="assets/img/growth.png"
+							alt="Growth"
+							data-aos="fade-up"
+							data-aos-duration="700"
+						/>
+						<p
+							class="serve__desc mt-4"
+							data-aos="fade-up"
+							data-aos-duration="900"
 							>With Docmedilink, you're not just investing in a platform; you're
 							partnering with a team dedicated to helping you transform your
 							healthcare delivery, empowering your practice, and exceeding
@@ -324,8 +371,10 @@
 		</footer>
 		<!--====||  footer Section End ||====-->
 
-		<!-- jQuery Script -->
+		<!--====||  Script File Integration Start ||====-->
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		<script src="assets/js/jquery-3.6.4.min.js"></script>
 		<script src="assets/js/main.js"></script>
+		<!--====||  Script File Integration End ||====-->
 	</body>
 </html>
