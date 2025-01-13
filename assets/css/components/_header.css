@@ -54,11 +54,11 @@
 
 		&__menus {
 			ul {
-				@apply absolute z-10 -top-full -right-full w-1/2 flex flex-col bg-white transition-all duration-300;
+				@apply absolute z-10 top-[80px] -right-full w-1/2 flex flex-col bg-white transition-all duration-300;
 			}
 			&.show-menu {
 				ul {
-					@apply top-[80px] right-0 h-screen py-10 px-5 w-full;
+					@apply right-0 h-screen py-10 px-5 w-full;
 					li {
 						a {
 							@apply block py-3;
