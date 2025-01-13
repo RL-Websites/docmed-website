@@ -50,18 +50,15 @@
 	}
 	.header {
 		height: 90px;
+		z-index: 1000;
+
 		&__menus {
 			ul {
-				position: absolute;
-				right: 0;
-				top: -100%;
-
-				transition: 0.5s;
+				@apply absolute z-10 -top-full -right-full w-1/2 flex flex-col bg-white transition-all duration-300;
 			}
 			&.show-menu {
 				ul {
-					z-index: 1000;
-					@apply flex flex-col fixed  bg-white w-full top-20 py-10 px-5 left-0 h-screen;
+					@apply top-[80px] right-0 h-screen py-10 px-5 w-full;
 					li {
 						a {
 							@apply block py-3;
