@@ -18,14 +18,14 @@
 	</head>
 	<body>
 		<!--====||  Header Section Start ||====-->
-		<header class="header">
+		<header class="header" id="home">
 			<div class="container mx-auto flex justify-between items-center">
 				<a href="index.html">
 					<img src="assets/img/logo.svg" alt="Docmedilink Logo" />
 				</a>
 				<nav class="header__menus">
 					<ul class="flex gap-7">
-						<li><a href="index.html" class="menu-link">Home</a></li>
+						<li><a href="#home" class="menu-link">Home</a></li>
 						<li><a href="#our-services" class="menu-link">Services</a></li>
 						<li><a href="#clinicians" class="menu-link">Clinicians</a></li>
 						<li><a href="#about-us" class="menu-link">About us</a></li>
@@ -264,12 +264,10 @@
 						<!-- Single Service Card End -->
 						<div
 							class="services__card flex justify-center items-center border-none !pt-5"
+							data-aos="zoom-in"
+							data-aos-duration="500"
 						>
-							<a
-								href="services.html"
-								class="dml-btn dml-btn__outline"
-								data-aos="zoom-in"
-								data-aos-duration="500"
+							<a href="services.html" class="dml-btn dml-btn__outline"
 								>Learn More</a
 							>
 						</div>
@@ -553,7 +551,7 @@
 				<div>
 					<img
 						class="absolute -z-10 top-0 md:right-0 -right-2 md:w-[168px] w-[80px]"
-						src="assets/img/frame/blink-2.svg"
+						src="assets/img/frame/blink-1.svg"
 						alt="Frame"
 					/>
 					<img
@@ -1125,7 +1123,7 @@
 						</div>
 						<!--Contact Form End-->
 
-						<div class="form-modal lg:p-20 md:p-10 p-5 md:mt-0 mt-5">
+						<!-- <div class="form-modal lg:p-20 md:p-10 p-5 md:mt-0 mt-5">
 							<div class="form-modal--content">
 								<div class="success-animation">
 									<svg
@@ -1154,7 +1152,7 @@
 									shortly.</p
 								>
 							</div>
-						</div>
+						</div> -->
 						<!--Form Modal End-->
 					</div>
 				</div>
