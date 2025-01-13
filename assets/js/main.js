@@ -1,23 +1,33 @@
 $(document).ready(function () {
-	$(".question-btn").click(function () {
-		const targetId = $(this).data("toggle");
-		const $target = $("#" + targetId);
+	$(document).ready(function () {
+		const $firstQuestion = $(".question-btn").first();
+		const firstTargetId = $firstQuestion.data("toggle");
+		const $firstTarget = $("#" + firstTargetId);
 
-		$(".answer").not($target).slideUp();
-		$(".accordion__icon")
-			.not($(this).find(".accordion__icon"))
-			.removeClass("rotate-180")
-			.addClass("rotate-0");
+		$firstTarget.slideDown();
+		$firstQuestion.find(".accordion__icon").addClass("rotate-180");
 
-		$target.slideToggle();
+		$(".question-btn").click(function () {
+			const targetId = $(this).data("toggle");
+			const $target = $("#" + targetId);
 
-		const $icon = $(this).find(".accordion__icon");
-		if ($icon.hasClass("rotate-180")) {
-			$icon.removeClass("rotate-180").addClass("rotate-0");
-		} else {
-			$icon.removeClass("rotate-0").addClass("rotate-180");
-		}
+			$(".answer").not($target).slideUp();
+			$(".accordion__icon")
+				.not($(this).find(".accordion__icon"))
+				.removeClass("rotate-180")
+				.addClass("rotate-0");
+
+			$target.slideToggle();
+
+			const $icon = $(this).find(".accordion__icon");
+			if ($icon.hasClass("rotate-180")) {
+				$icon.removeClass("rotate-180").addClass("rotate-0");
+			} else {
+				$icon.removeClass("rotate-0").addClass("rotate-180");
+			}
+		});
 	});
+
 	// Accordion configuration done
 
 	const header = $("header");
