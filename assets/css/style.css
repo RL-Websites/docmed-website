@@ -81,6 +81,8 @@
 	top: -1.25rem;
 }.-top-\[250px\]{
 	top: -250px;
+}.-top-\[2px\]{
+	top: -2px;
 }.-top-\[500px\]{
 	top: -500px;
 }.bottom-0{
@@ -175,10 +177,6 @@
 	top: 50px;
 }.top-\[55\%\]{
 	top: 55%;
-}.-top-1{
-	top: -0.25rem;
-}.-top-\[2px\]{
-	top: -2px;
 }.-z-10{
 	z-index: -10;
 }.z-10{
@@ -233,8 +231,6 @@
 	margin-top: 2rem;
 }.mt-\[100px\]{
 	margin-top: 100px;
-}.-mt-1{
-	margin-top: -0.25rem;
 }.block{
 	display: block;
 }.inline-block{
@@ -394,14 +390,14 @@
 	background-color: var(--blue-light-4);
 }.bg-cyan{
 	background-color: var(--cyan);
+}.bg-danger{
+	background-color: var(--danger);
 }.bg-green{
 	background-color: var(--green);
 }.bg-light-purple{
 	background-color: var(--light-purple);
 }.bg-yellow{
 	background-color: var(--yellow);
-}.bg-danger{
-	background-color: var(--danger);
 }.p-4{
 	padding: 1rem;
 }.p-5{
@@ -436,14 +432,14 @@
 	padding-inline-start: 0px;
 }.pt-0{
 	padding-top: 0px;
+}.pt-1{
+	padding-top: 0.25rem;
 }.pt-5{
 	padding-top: 1.25rem;
 }.pt-\[50px\]{
 	padding-top: 50px;
 }.pt-\[80px\]{
 	padding-top: 80px;
-}.pt-1{
-	padding-top: 0.25rem;
 }.text-center{
 	text-align: center;
 }.text-start{
@@ -1290,9 +1286,13 @@ h6 {
 	.header {
 		height: 90px;
 	}
-			.header__menus ul{
-		display: none;
-	}
+			.header__menus ul {
+				position: absolute;
+				right: 0;
+				top: -100%;
+
+				transition: 0.5s;
+			}
 				.header__menus.show-menu ul {
 					z-index: 1000;
 					position: fixed;
@@ -1308,9 +1308,11 @@ h6 {
 					padding-left: 1.25rem;
 					padding-right: 1.25rem;
 				}
-						.header__menus.show-menu ul li a {
-							display: block;
-						}
+						.header__menus.show-menu ul li a{
+		display: block;
+		padding-top: 0.75rem;
+		padding-bottom: 0.75rem;
+	}
 							.header__menus.show-menu ul li a::after {
 								position: absolute;
 								right: unset;
@@ -1320,6 +1322,10 @@ h6 {
 								width: 100%;
 								background-color: var(--blue-light-1);
 							}
+							.header__menus.show-menu ul li a:last-child{
+		padding-top: 0.375rem;
+		padding-bottom: 0.375rem;
+	}
 }.footer{
 	position: relative;
 	overflow: hidden;

@@ -52,7 +52,11 @@
 		height: 90px;
 		&__menus {
 			ul {
-				@apply hidden;
+				position: absolute;
+				right: 0;
+				top: -100%;
+
+				transition: 0.5s;
 			}
 			&.show-menu {
 				ul {
@@ -60,7 +64,7 @@
 					@apply flex flex-col fixed  bg-white w-full top-20 py-10 px-5 left-0 h-screen;
 					li {
 						a {
-							display: block;
+							@apply block py-3;
 							&::after {
 								position: absolute;
 								right: unset;
@@ -69,6 +73,9 @@
 								height: 1px;
 								width: 100%;
 								background-color: var(--blue-light-1);
+							}
+							&:last-child {
+								@apply py-1.5;
 							}
 						}
 					}
